@@ -47,9 +47,34 @@
   border-radius: 10px;
   border-style: solid;
   border-color: white;
+  margin-right: 5px;
 }
 
 .search-bar::placeholder {
   font-weight: 400;
   padding-left: 5px;
+}
+
+.navbar-buttons{
+  height: 30px;
+  width: 60px;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(31, 38, 52);
+  font-weight: 400;
+  font-size: 12px;
+  background: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 5px;
+  margin-left: 5px;
+  
+  
+  
+
+  transition: opacity 0.25s;
+}
+
+.nav-buttons:hover {
+  opacity: 0.8;
 }

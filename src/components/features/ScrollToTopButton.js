@@ -9,7 +9,7 @@ export default function ScrollToTopButton() {
   };
 
   return (
-    <button onClick={handleScroll} className="scroll-to-top-button">
+    <button onClick={handleScroll} className="navbar-buttons">
       Top
     </button>
   );
