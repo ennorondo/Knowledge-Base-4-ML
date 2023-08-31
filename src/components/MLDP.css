@@ -1,0 +1,71 @@
+.development-process-container {
+  margin-top: 200px;
+  height: 500px;
+  width: 100%;
+  padding-top: 100px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dp-content {
+  width: 800px;
+  height: 600px;
+}
+
+.upper-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.lower-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.process-btn {
+  height: 100px;
+  width: 150px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-weight: 300;
+  font-size: 18px;
+  background: -webkit-linear-gradient(225deg, rgb(132, 0, 255) 0%, rgb(230, 0, 255) 100%);
+  box-shadow: rgb(31, 38, 52) 20px 20px 60px, rgb(31, 38, 52) -20px -20px 60px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+
+  transition: opacity 0.25s;
+  
+}
+
+.process-btn:hover {
+  opacity: 0.6;
+}
+
+
+.scroll-to-top-button{
+  height: 30px;
+  width: 60px;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(31, 38, 52);
+  font-weight: 400;
+  font-size: 12px;
+  background: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 20px;
+  
+  
+  
+
+  transition: opacity 0.25s;
+}
+
+.scroll-to-top-button:hover {
+  opacity: 0.8;
+}
