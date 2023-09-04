@@ -1,5 +1,6 @@
 import React from "react"
 import ScrollButton from "./features/Scrollbutton"
+import UpArrow from "./icons/UpArrow.png"
 
 export default function DevelopmentProcess() {
 
@@ -12,10 +13,15 @@ export default function DevelopmentProcess() {
             targetId="scrollTarget-BU"
             name="Business Understanding"
           />
+          <div className="img-container">
+            <img src={UpArrow} alt="UpArrow" className="right-arrow-icon" />
+            <img src={UpArrow} alt="UpArrow" className="left-arrow-icon" />
+          </div>
           <ScrollButton
             targetId="scrollTarget-DU"
             name="Data Understanding"
           />
+          <img src={UpArrow} alt="UpArrow" className="right-arrow-icon" />
           <ScrollButton
             targetId="scrollTarget-DP"
             name="Data Preparation"
@@ -26,10 +32,12 @@ export default function DevelopmentProcess() {
             targetId="scrollTarget-D"
             name="Deployment"
           />
+          <img src={UpArrow} alt="UpArrow" className="left-arrow-icon-lower" />
           <ScrollButton
             targetId="scrollTarget-E"
             name="Evaluation"
           />
+          <img src={UpArrow} alt="UpArrow" className="left-arrow-icon-lower" />
           <ScrollButton
             targetId="scrollTarget-M"
             name="Modeling"

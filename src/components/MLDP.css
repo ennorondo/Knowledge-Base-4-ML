@@ -16,13 +16,14 @@
 
 .upper-content {
   display: flex;
-  justify-content: space-between;
   margin-bottom: 100px;
+  align-items: center;
 }
 
 .lower-content {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .process-btn {
@@ -46,5 +47,30 @@
   opacity: 0.6;
 }
 
+.img-container {
+  position: relative;
+  
+}
 
+.right-arrow-icon {
+  transform: rotate(90deg);
+  top: 0;
+  right: 0;
+  width: 170px;
+  
+}
 
+.left-arrow-icon {
+  transform: rotate(270deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 170px;
+}
+
+.left-arrow-icon-lower {
+  transform: rotate(270deg);
+  top: 0;
+  right: 0;
+  width: 170px;
+}
