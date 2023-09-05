@@ -7,6 +7,7 @@ import './components/features/MenuButton.css'
 import Navbar from "./components/Navbar.js"
 import DevelopmentProcess from './components/MLDP.js';
 import AllProcessViews from './components/ProcessViews.js';
+import './components/features/ToolButton.css'
 
 
 export default function App() {

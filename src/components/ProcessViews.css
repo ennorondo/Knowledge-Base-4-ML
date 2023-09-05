@@ -1,9 +1,17 @@
+.title-process {
+  text-decoration: underline;
+  font-size: 40px;
+  margin-left: 150px;
+  display: flex;
+  align-items: center;
+}
+
 .process-view-container {
-  height: 700px;
+  height: 900px;
   width: 100%;
   padding-top: 100px;
   z-index: 1;
-  margin-bottom: 200px;
+  margin-bottom: 300px;
   
 }
 
@@ -22,4 +30,21 @@
   margin-left: 250px;
   margin-right: 250px;
   margin-top: 70px;
+}
+
+.section-header {
+  font-size: 20px;
+  margin-left: 150px;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.process-menu-btns {
+  margin-left: 140px;
+  margin-right: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
 }

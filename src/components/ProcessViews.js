@@ -1,17 +1,20 @@
 import React from "react"
 import ScrollButton from "./features/Scrollbutton"
 import UpArrow from "./icons/UpArrow.png"
+import ToolButton from "./features/ToolButton"
+import BestPracticesButton from "./features/BestPracticesButton"
+import AntipatternsButton from "./features/AntipatternsButton"
 
 
 function ProcessView(props) {
   return (
     <div className="process-view-container">
       <div>
-        <h1 className="title" id={props.id}>
+        <h1 className="title-process" id={props.id}>
           {props.title}
         </h1>
       </div>
-
+      <h1 className="section-header">Related Processes:</h1>
       <div className="shortcut-overview">
         <ScrollButton         
           name={props.name}
@@ -28,11 +31,17 @@ function ProcessView(props) {
           targetId={props.targetId3}
         />
       </div>
-
+      <h1 className="section-header">Description:</h1>
       <div>
         <p className="process-text">
           {props.text}
         </p>
+      </div>
+      <h1 className="section-header">Process Glossary:</h1>
+      <div className="process-menu-btns">
+        <ToolButton />
+        <BestPracticesButton />
+        <AntipatternsButton />
       </div>
     </div>
   )
