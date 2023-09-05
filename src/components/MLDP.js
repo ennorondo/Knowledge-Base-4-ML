@@ -27,6 +27,13 @@ export default function DevelopmentProcess() {
             name="Data Preparation"
           />
         </div>
+        <div className="mid-arrows">
+          <img src={UpArrow} alt="UpArrow" className="aslant-arrow-icon-lower" />
+          <div className="img-container">
+            <img src={UpArrow} alt="UpArrow" className="up-arrow-icon-lower" />
+            <img src={UpArrow} alt="UpArrow" className="down-arrow-icon-lower" />
+          </div>
+        </div>
         <div className="lower-content">
           <ScrollButton
             targetId="scrollTarget-D"

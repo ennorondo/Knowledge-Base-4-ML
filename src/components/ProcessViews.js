@@ -1,5 +1,6 @@
 import React from "react"
 import ScrollButton from "./features/Scrollbutton"
+import UpArrow from "./icons/UpArrow.png"
 
 
 function ProcessView(props) {
@@ -16,10 +17,12 @@ function ProcessView(props) {
           name={props.name}
           targetId={props.targetId}
         />
+        <img src={UpArrow} alt="UpArrow" className="right-arrow-icon" />
         <ScrollButton         
           name={props.name2}
           targetId={props.targetId2}
         />
+        <img src={UpArrow} alt="UpArrow" className="right-arrow-icon" />
         <ScrollButton         
           name={props.name3}
           targetId={props.targetId3}
