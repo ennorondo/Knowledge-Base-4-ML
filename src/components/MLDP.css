@@ -1,5 +1,5 @@
 .development-process-container {
-  margin-top: 150px;
+  margin-top: 200px;
   height: 500px;
   width: 100%;
   padding-top: 100px;
@@ -17,12 +17,14 @@
 .upper-content {
   display: flex;
   align-items: center;
+  height: 100px;
 }
 
 .lower-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 100px;
 }
 
 .process-btn {
@@ -97,9 +99,11 @@
   left: 0;
   width: 170px;
   margin-left: 300px;
+  margin-top: 6px;
 }
 
 .mid-arrows {
   display: flex;
   align-items: center;
+  height: 170px;
 }
