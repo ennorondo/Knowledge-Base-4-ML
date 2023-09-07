@@ -1,10 +1,14 @@
 import React from 'react';
 
+//CSS
+import '../Navbar.css'
+
+import Navbar from '../Navbar';
+
 export default function GlossaryPage() {
   return (
     <div>
-      <h1>Glossary Page</h1>
-      {/* Add your content for the About page */}
+      <Navbar name="Glossary"/>
     </div>
   );
 }

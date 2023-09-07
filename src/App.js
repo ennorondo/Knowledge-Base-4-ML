@@ -1,21 +1,27 @@
 import React from "react"
-import './App.css';
-import './components/Navbar.css'
-import './components/MLDP.css'
-import './components/ProcessViews.css'
-import './components/features/MenuButton.css'
-import Navbar from "./components/Navbar.js"
-import DevelopmentProcess from './components/MLDP.js';
-import AllProcessViews from './components/ProcessViews.js';
-import './components/features/ToolButton.css'
+
+//Pages
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import HomePage from "./components/pages/Home";
+import GlossaryPage from "./components/pages/Glossary";
+import ToolPage from "./components/pages/Tools";
+//import ToolPage from "./components/pages/Tools";
+
+
 
 
 export default function App() {
   return (
     <div className="App">
-        <Navbar />
-        <DevelopmentProcess />
-        <AllProcessViews />
+      <Router>
+        <div>
+          <Routes>
+            <Route path="/glossary" element={<GlossaryPage />} />
+            <Route path="/" element={<HomePage />} />
+            <Route path="/tools" element={<ToolPage />} />
+          </Routes>
+        </div>
+      </Router>
     </div>
   );
 }

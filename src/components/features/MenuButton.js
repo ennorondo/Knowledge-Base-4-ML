@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function MenuButton() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,10 +21,13 @@ export default function MenuButton() {
         <div className="menu" onBlur={closeMenu}>
           <ul>
             <li>
-              <a href="/">Glossary</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="/page1">Tools</a>
+              <Link to="/glossary">Glossary</Link>
+            </li>
+            <li>
+              <Link to="/tools">Tools</Link>
             </li>
             <li>
               <a href="/page2">Best Practices</a>
