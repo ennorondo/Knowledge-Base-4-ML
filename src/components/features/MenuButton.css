@@ -17,6 +17,10 @@
   margin-left: 5px;
 }
 
+.menu-button:hover {
+  opacity: 0.7;
+}
+
 .menu {
   position: absolute;
   font-family: 'Montserrat', sans-serif;
@@ -26,10 +30,9 @@
   color: rgb(31, 38, 52);
   background-color: rgb(255, 255, 255);
   border: 1px solid #ccc;
-  width: 150px;
+  width: 120px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
-  width: 100px;
   
 }
 

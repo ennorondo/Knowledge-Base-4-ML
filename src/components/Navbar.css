@@ -75,6 +75,6 @@
   transition: opacity 0.25s;
 }
 
-.nav-buttons:hover {
-  opacity: 0.8;
+.navbar-buttons:hover {
+  opacity: 0.7;
 }

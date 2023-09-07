@@ -30,10 +30,10 @@ export default function MenuButton() {
               <Link to="/tools">Tools</Link>
             </li>
             <li>
-              <a href="/page2">Best Practices</a>
+              <Link to="/bestpractices">Best Practices</Link>
             </li>
             <li>
-              <a href="/page3">Antipatterns</a>
+            <Link to="/antipatterns">Antipatterns</Link>
             </li>
           </ul>
         </div>
