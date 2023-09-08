@@ -16,7 +16,7 @@ import AllProcessViews from '../ProcessViews.js';
 export default function HomePage() {
   return (
     <div>
-      <Navbar name="Knowledge Base for SE4ML"/>
+      <Navbar name="The Machine Learning Development Process"/>
       <DevelopmentProcess />
       <AllProcessViews />
     </div>
