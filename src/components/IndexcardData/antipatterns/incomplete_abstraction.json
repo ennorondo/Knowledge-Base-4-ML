@@ -1,0 +1,38 @@
+{
+  "antiPatterns": [
+    {
+      "name": "Incomplete Abstraction",
+      "aliases": [
+        "Incomplete Service",
+        "Client Completes Service"
+      ],
+      "description": "This smell arises when an abstraction does not support complementary or interrelated methods completely in its public interface.",
+      "context": "",
+      "detection": "In web-based applications, client artifacts such as JSP or servlets include code for e.g. data validation or security checking. Or symmetric method pairs cannot be found.",
+      "consequences": "Functionality also has to be implemented multiple times for each client. Unit tests for such functionality (e.g. data validation) may fail or contain a lot of overhead code to properly test such a service.",
+      "cause": "Mainly caused by a lack of understanding that abstractions shall be self-contained, standalone functional components. A lack of communication in the development team can also lead to this antipattern, not adhering to language or library conventions.",
+      "solution": "Refactor the functionality and aim for symmetric method pairs.",
+      "example": "open/close; read/write",
+      "sources": [
+        "@book{dudney2003j2ee, title={J2EE antipatterns}, author={Dudney, Bill and Asbury, Stephen and Krozak, Joseph K and Wittkopf, Kevin}, year={2003}, publisher={John Wiley \\& Sons}}",
+        "@book{Suryanarayana, author = {Suryanarayana, Girish and Samarthyam, Ganesh and Sharma, Tushar}, title = {Refactoring for Software Design Smells: Managing Technical Debt}, year = {2014}, isbn = {0128013974,\newline 9780128013977}, edition = {1st}, publisher = {Morgan Kaufmann Publishers Inc.}, address = {San Francisco, CA, USA}}"
+      ],
+      "tags": [
+        "soa",
+        "microservices",
+        "architecture",
+        "abstraction"
+      ],
+      "relatedItems": [
+        {
+          "relation": "relates",
+          "name": "Feature Envy"
+        },
+        {
+          "relation": "relates",
+          "name": "Incomplete Library Class"
+        }
+      ]
+    }
+  ]
+}

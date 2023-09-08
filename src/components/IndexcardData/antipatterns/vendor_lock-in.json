@@ -1,0 +1,42 @@
+{
+  "antiPatterns": [
+    {
+      "name": "Vendor Lock-In",
+      "aliases": [
+        "Standardization Paralysis",
+        "Overstandardized SOA",
+        "Product-Dependent Architecture",
+        "Bondage and Submission",
+        "Connector Conspiracy",
+        "Dead End"
+      ],
+      "description": "The usage of diverse proprietary technology leads to many potentially conflicting SOA standards and additional complexity in a system. Often combined with a Wolf Ticket, which is a product that claims openness and conformance to standards that have no enforceable meaning.",
+      "context": "Standardization is a useful part of any technical domain, but SOA standards are commonly set by large software vendors and do not focus on compatibility with other standards.",
+      "detection": "",
+      "consequences": "There are many (interdependent) standards that have to be introduced, updated, and maintained. Since these standards are usually set by large software vendors, the culture of large enterprises is (unintentionally) applied. Users of the standards also heavily depend on the vendors.",
+      "cause": "The tendency to standardize all technical aspects and dimensions of SOA leads to such an overstandardization. Moreover, XML enables an easy transformation of languages to standards.",
+      "solution": "Reduce standards to SOA aspects where they have the greatest effect. This can be achieved by using coarse-grained and domain-oriented interfaces. At first, vendors should also specify local standards and assess whether they are useful. Based on that, they should publish them as public standards or discard them.",
+      "example": "",
+      "sources": [
+        "@inproceedings{kral2009popular,author={Kr{\\'a}l, Jaroslav and {\\v{Z}}emlicka, Michal},booktitle={2009 Computation World: Future Computing, Service Computation, Cognitive, Adaptive, Content, Patterns},title={Popular SOA Antipatterns},year={2009},pages={271-276},doi={10.1109/ComputationWorld.2009.80},month={Nov}}",
+        "@inproceedings{kral2007most,author={Kral, Jaroslav and Zemlicka, Michal},booktitle={International Conference on Software Engineering Advances (ICSEA 2007)},title={The Most Important Service-Oriented Antipatterns},year={2007},pages={29--29},doi={10.1109/ICSEA.2007.74},month={Aug}}",
+        "@online{Sourcemaking-Antipatterns, author = {Shvets, Alexander and Frey, Gerhard and Pavlova, Marina}, title = {AntiPatterns}, date = {2007/2019}, url = {https://sourcemaking.com/antipatterns}, urldate = {2019-04-24}}"
+      ],
+      "tags": [
+        "soa",
+        "architecture",
+        "The Change Preventers"
+      ],
+      "relatedItems": [
+        {
+          "relation": "relates",
+          "name": "No Legacy"
+        },
+        {
+          "relation": "follows",
+          "name": "Nanoservices"
+        }
+      ]
+    }
+  ]
+}

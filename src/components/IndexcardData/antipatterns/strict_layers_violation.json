@@ -1,0 +1,30 @@
+{
+    "antiPatterns": [
+        {
+            "name": "Strict Layers Violation",
+            "aliases": [
+                ""
+            ],
+            "description": " In this scenario, one cannot reliably prevent that strict layers are violated. It can always happen that a layer skips the one directly beneath it and accesses a layer further below instead",
+            "context": "",
+            "detection": "",
+            "consequences": "alterability is affected. The number of a layer's potential clients will increase, and the dependency between layers will grow.",
+            "cause": "Since the common programming languages do not provide concepts for the definition of layers, layers must be built based on conventions.",
+            "solution": "",
+            "example": "",
+            "sources": [
+                "@book{Lippert, title={Refactoring in large software projects: performing complex restructurings successfully}, author={Lippert, Martin and Roock, Stephen}, year={2006}, publisher={John Wiley & Sons}}"
+            ],
+            "tags": [
+                "architecture",
+                "between classes"
+            ],
+            "relatedItems": [
+                {
+                    "relation": "",
+                    "name": ""
+                }
+            ]
+        }
+    ]
+}

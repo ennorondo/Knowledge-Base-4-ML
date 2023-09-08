@@ -1,0 +1,49 @@
+{
+    "antiPatterns": [
+        {
+            "name": "Weakened Modularity",
+            "aliases": [
+                "The Knot",
+                "Code at Wrong Level of Abstraction",
+                "Artificial Coupling"
+            ],
+            "description": "Each module must strive for high cohesion and low coupling. This smell arises when a module exhibits high coupling and low cohesion.",
+            "context": "High cohesion is one of the most important design principles. Modules should provide operations that are closely related to each other. Functionality that is likely to change together should be in the same artifact.",
+            "detection": "We compute the modularity ratio for each module by dividing the number of intra-module references (cohesion) and the number of inter-module references (coupling).",
+            "consequences": "The maintainability and possibility for development of such code may be reduced. It may be more difficult to analyze and grasp all provided functionality.",
+            "cause": "Often these divergent modifications are due to poor program structure.",
+            "solution": "Split up the behavior of the class via Extract Class.",
+            "example": "",
+            "sources": [
+                "@book{rotem2012soa,title={SOA patterns}, author={Rotem-Gal-Oz, Arnon and Bruno, Eric and Dahan, Udi}, year={2012}, publisher={Manning}}",
+                "@inproceedings{nayrolles2013improving, title={Improving SOA antipatterns detection in Service Based Systems by mining execution traces}, author={Nayrolles, Mathieu and Moha, Naouel and Valtchev, Petko}, booktitle={Reverse Engineering (WCRE), 2013 20th Working Conference on}, pages={321--330}, year={2013}, doi={10.1109/WCRE.2013.6671307}}",
+                "@inproceedings{palma2015study, title={A study on the taxonomy of service antipatterns}, author={Palma, Francis and Mohay, Naouel}, booktitle={Patterns Promotion and Anti-patterns Prevention (PPAP), 2015 IEEE 2nd Workshop on}, pages={5--8}, year={2015}, doi={10.1109/PPAP.2015.7076848}}",
+                "@INPROCEEDINGS{Sharma, author={T. {Sharma} and M. {Fragkoulis} and D. {Spinellis}}, booktitle={2016 IEEE/ACM 13th Working Conference on Mining Software Repositories (MSR)}, title={Does Your Configuration Code Smell?}, year={2016}, volume={}, number={}, pages={189-200}, keywords={software maintenance;software quality;configuration management system;smell category;puppet repositories;code quality management;software engineering knowledge;computing system configurations;IaC;infrastructure as code;configuration code;Best practices;Software;Software engineering;Correlation;Context;Production;Data mining;Infrastructure as Code;Code quality;Configuration smells;Technical debt;Maintainability}, doi={10.1109/MSR.2016.028}, ISSN={}, month={May}}",
+                "@book{Martin, author = {Martin, Robert C.}, title = {Clean Code: A Handbook of Agile Software Craftsmanship}, year = {2008}, isbn = {0132350882, 9780132350884}, edition = {1}, publisher = {Prentice Hall PTR}, address = {Upper Saddle River, NJ, USA}}"
+            ],
+            "tags": [
+                "microservices",
+                "soa",
+                "architecture",
+                "cohesion",
+                "The Couplers",
+                "The Change Preventers",
+                "between classes"
+            ],
+            "relatedItems": [
+                {
+                    "relation": "relates",
+                    "name": "Multifaceted Abstraction"
+                },
+                {
+                    "relation": "relates",
+                    "name": "Dense Structure"
+                },
+                {
+                    "relation": "relates",
+                    "name": "Hub-like Modularization"
+                }
+            ]
+        }
+    ]
+}

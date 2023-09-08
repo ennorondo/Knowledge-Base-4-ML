@@ -1,0 +1,32 @@
+{
+    "antiPatterns": [
+        {
+            "name": "Unnecessary Hierarchy",
+            "aliases": [
+                "Taxomania",
+                "Object Classes"
+            ],
+            "description": "This smell arises when the whole inheritance hierarchy is unnecessary, indicating that inheritance has been applied needlessly for the particular design context.",
+            "context": "",
+            "detection": "",
+            "consequences": "",
+            "cause": "Subclassing instead of instantiating.",
+            "solution": "Remove hierarchy and transform subtypes  into instances of that type",
+            "example": "Separate Subclasses for RedRose, PinkRose, WhiteRose instead of Rose class with color attribute.",
+            "sources": [
+                "@book{Suryanarayana, author = {Suryanarayana, Girish and Samarthyam, Ganesh and Sharma, Tushar}, title = {Refactoring for Software Design Smells: Managing Technical Debt}, year = {2014}, isbn = {0128013974,\newline 9780128013977}, edition = {1st}, publisher = {Morgan Kaufmann Publishers Inc.}, address = {San Francisco, CA, USA}}"
+            ],
+            "tags": [
+                "architecture",
+                "The Couplers",
+                "between classes"
+            ],
+            "relatedItems": [
+                {
+                    "relation": "",
+                    "name": ""
+                }
+            ]
+        }
+    ]
+}

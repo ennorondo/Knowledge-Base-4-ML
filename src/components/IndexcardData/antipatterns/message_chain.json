@@ -1,0 +1,53 @@
+{
+  "antiPatterns": [
+    {
+      "name": "Message Chain",
+      "aliases": [
+        "Service Chain",
+        "Percolating Process"
+      ],
+      "description": "A chain of service calls fulfills common functionality.",
+      "context": "Multiple services exist that call each other sequentially to fulfill an abstraction or business process. Overly aggressive delegate hiding can cause code in which it’s hard to see where the functionality is actually occurring. Which is another way of saying, avoid the Middle Man smell as well.",
+      "detection": "",
+      "consequences": "Such a chain may slow down performance and reduces the availability of the chained abstraction. It may also be harder to change the abstraction, especially with respect to the invocation order of services.",
+      "cause": "The organisation may have created a detailed map of processes, which resulted in a series of grand \"end to end\" process models that are categorized by their large number of steps and a lack of sub-processes. However, no valid business services have been identified and thus the process maps have been created without a proper service structure. This makes identifying valid services a tricky process, especially when looking for cross-functional or horizontal services.",
+      "solution": "The first resolution is to create the services architecture independently of the process map. This will provide a structure for breaking down processes and creating a clear hierarchy of use. Next, this service architecture should be compared with the process map to understand where the cuts should be made. The current system can then be incrementally refactored to create a more service-oriented solution by attacking major inflexibilities in the system.",
+      "example": "",
+      "sources": [
+        "@inproceedings{nayrolles2013improving, title={Improving SOA antipatterns detection in Service Based Systems by mining execution traces}, author={Nayrolles, Mathieu and Moha, Naouel and Valtchev, Petko}, booktitle={Reverse Engineering (WCRE), 2013 20th Working Conference on}, pages={321--330}, year={2013}, doi={10.1109/WCRE.2013.6671307}}",
+        "@misc{Jones2006, title = {{SOA anti-patterns}}, year = {2006}, booktitle = {InfoQ}, author = {Jones, Steve}, url = {https://www.infoq.com/articles/SOA-anti-patterns} }",
+        "@book{Fowler, title={Refactoring: improving the design of existing code}, author={Fowler, Martin}, year={2018}, publisher={Addison-Wesley Professional}}",
+        "@book{Wake, author = {Wake, William C.}, title = {Refactoring Workbook}, year = {2003}, isbn = {0321109295}, edition = {1}, publisher = {Addison-Wesley Longman Publishing Co., Inc.}, address = {Boston, MA, USA}}",
+        "@article{Mantyla, author = {Mäntylä, Mika V. and Lassenius, Casper}, title = {Subjective Evaluation of Software Evolvability Using Code Smells: An Empirical Study}, journal = {Empirical Software Engineering}, issue_date = {September 2006}, volume = {11}, number = {3}, month = sep, year = {2006}, issn = {1382-3256}, pages = {395--431}, numpages = {37}, url = {http://dx.doi.org/10.1007/s10664-006-9002-8}, doi = {10.1007/s10664-006-9002-8}, acmid = {1146489}, publisher = {Kluwer Academic Publishers}, address = {Hingham, MA, USA}, keywords = {Code metrics, Code smells, Evolvability, Human factors, Maintainability, Perceived evaluation, Software metrics, Subjective evaluation}}",
+        "@online{RefactoringGuru-Refactoring, author = {Shvets, Alexander}, title = {Refactoring: clean your code}, date = {2014/2019}, url = {https://refactoring.guru/refactoring}, urldate = {2019-04-24}}",
+        "@online{Codinghorror, author = {Atwood, Jeff}, title = {Code Smells}, date = {2006-05-18}, url = {https://blog.codinghorror.com/code-smells/}, urldate = {2019-04-24}}",
+        "@book{Martin, author = {Martin, Robert C.}, title = {Clean Code: A Handbook of Agile Software Craftsmanship}, year = {2008}, isbn = {0132350882, 9780132350884}, edition = {1}, publisher = {Prentice Hall PTR}, address = {Upper Saddle River, NJ, USA}}"
+      ],
+      "tags": [
+        "microservices",
+        "soa",
+        "architecture",
+        "The Couplers",
+        "between classes"
+      ],
+      "relatedItems": [
+        {
+          "relation": "relates",
+          "name": "Chatty Service"
+        },
+        {
+          "relation": "precedes",
+          "name": "Wrong Cuts"
+        },
+        {
+          "relation": "relates",
+          "name": "Middle Man"
+        },
+        {
+          "relation": "relates",
+          "name": "Cyclic Dependency"
+        }
+      ]
+    }
+  ]
+}

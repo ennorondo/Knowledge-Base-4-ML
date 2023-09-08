@@ -1,0 +1,61 @@
+{
+    "antiPatterns": [
+        {
+            "name": "Multifaceted Abstraction",
+            "aliases": [
+                "Divergent Change",
+                "Large Class",
+                "Low Cohesive Operations",
+                "SOAPY Business Logic",
+                "Muddy Tiers"
+            ],
+            "description": "Occurs when one class is commonly changed in different ways for different reasons, because of multiple responsibilities. Separating these divergent responsibilities decreases the chance that one change could affect another and lower maintenance costs.",
+            "context": "High cohesion is one of the most important design principles for SOA and Microservices. Services should provide operations that are closely related to each other. Functionality that is likely to change together should be in the same service.",
+            "detection": "Lack of Cohesion Of Methods (LCOM). Web service data types or processing tasks exist that also implement business logic.",
+            "consequences": "The maintainability of such a service may be reduced. It may be more difficult to analyze and grasp all provided service functionality. The business logic is not reusable, because it contains web service specific implementation.",
+            "cause": "Often these divergent modifications are due to poor program structure or \"copypasta programming\".",
+            "solution": "Split up the behavior of the class via Extract Class. These components should dispatch requests to the underlying business logic.",
+            "example": "Calendar package which also supports time related functionality. A service endpoint implements business logic, but also deals with SOAP/XML processing.",
+            "sources": [
+                "@book{dudney2003j2ee, title={J2EE antipatterns}, author={Dudney, Bill and Asbury, Stephen and Krozak, Joseph K and Wittkopf, Kevin}, year={2003}, publisher={John Wiley \\& Sons}}",
+                "@book{Fowler, title={Refactoring: improving the design of existing code}, author={Fowler, Martin}, year={2018}, publisher={Addison-Wesley Professional}}",
+                "@book{Kerievsky, author = {Kerievsky, Joshua}, title = {Refactoring to Patterns}, year = {2004}, isbn = {0321213351}, publisher = {Pearson Higher Education}}",
+                "@book{Wake, author = {Wake, William C.}, title = {Refactoring Workbook}, year = {2003}, isbn = {0321109295}, edition = {1}, publisher = {Addison-Wesley Longman Publishing Co., Inc.}, address = {Boston, MA, USA}}",
+                "@article{Mantyla, author = {Mäntylä, Mika V. and Lassenius, Casper}, title = {Subjective Evaluation of Software Evolvability Using Code Smells: An Empirical Study}, journal = {Empirical Software Engineering}, issue_date = {September 2006}, volume = {11}, number = {3}, month = sep, year = {2006}, issn = {1382-3256}, pages = {395--431}, numpages = {37}, url = {http://dx.doi.org/10.1007/s10664-006-9002-8}, doi = {10.1007/s10664-006-9002-8}, acmid = {1146489}, publisher = {Kluwer Academic Publishers}, address = {Hingham, MA, USA}, keywords = {Code metrics, Code smells, Evolvability, Human factors, Maintainability, Perceived evaluation, Software metrics, Subjective evaluation}}",
+                "@online{RefactoringGuru-Refactoring, author = {Shvets, Alexander}, title = {Refactoring: clean your code}, date = {2014/2019}, url = {https://refactoring.guru/refactoring}, urldate = {2019-04-24}}",
+                "@online{Codinghorror, author = {Atwood, Jeff}, title = {Code Smells}, date = {2006-05-18}, url = {https://blog.codinghorror.com/code-smells/}, urldate = {2019-04-24}}",
+                "@online{Sourcemaking-Antipatterns, author = {Shvets, Alexander and Frey, Gerhard and Pavlova, Marina}, title = {AntiPatterns}, date = {2007/2019}, url = {https://sourcemaking.com/antipatterns}, urldate = {2019-04-24}}",
+                "@inproceedings{palma2015study, title={A study on the taxonomy of service antipatterns}, author={Palma, Francis and Mohay, Naouel}, booktitle={Patterns Promotion and Anti-patterns Prevention (PPAP), 2015 IEEE 2nd Workshop on}, pages={5--8}, year={2015}, doi={10.1109/PPAP.2015.7076848}}",
+                "@book{Suryanarayana, author = {Suryanarayana, Girish and Samarthyam, Ganesh and Sharma, Tushar}, title = {Refactoring for Software Design Smells: Managing Technical Debt}, year = {2014}, isbn = {0128013974,\newline 9780128013977}, edition = {1st}, publisher = {Morgan Kaufmann Publishers Inc.}, address = {San Francisco, CA, USA}}",
+                "@INPROCEEDINGS{Sharma, author={T. {Sharma} and M. {Fragkoulis} and D. {Spinellis}}, booktitle={2016 IEEE/ACM 13th Working Conference on Mining Software Repositories (MSR)}, title={Does Your Configuration Code Smell?}, year={2016}, volume={}, number={}, pages={189-200}, keywords={software maintenance;software quality;configuration management system;smell category;puppet repositories;code quality management;software engineering knowledge;computing system configurations;IaC;infrastructure as code;configuration code;Best practices;Software;Software engineering;Correlation;Context;Production;Data mining;Infrastructure as Code;Code quality;Configuration smells;Technical debt;Maintainability}, doi={10.1109/MSR.2016.028}, ISSN={}, month={May}}",
+                "@book{Lippert, title={Refactoring in large software projects: performing complex restructurings successfully}, author={Lippert, Martin and Roock, Stephen}, year={2006}, publisher={John Wiley & Sons}}",
+                "@book{Riel, author = {Riel, Arthur J.}, title = {Object-Oriented Design Heuristics}, year = {1996}, isbn = {020163385X}, publisher = {Addison-Wesley Longman Publishing Co., Inc.}, address = {Boston, MA, USA}}"
+            ],
+            "tags": [
+                "microservices",
+                "soa",
+                "architecture",
+                "The Change Preventers",
+                "between classes"
+            ],
+            "relatedItems": [
+                {
+                    "relation": "relates",
+                    "name": "The God Object"
+                },
+                {
+                    "relation": "relates",
+                    "name": "Connector Envy"
+                },
+                {
+                    "relation": "relates",
+                    "name": "Shotgun Surgery"
+                },
+                {
+                    "relation": "relates",
+                    "name": "Weakened Modularity"
+                }
+            ]
+        }
+    ]
+}

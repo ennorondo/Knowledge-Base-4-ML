@@ -1,0 +1,44 @@
+{
+  "antiPatterns": [
+    {
+      "name": "Nothing New",
+      "aliases": [
+        "Same Old Way"
+      ],
+      "description": "Practices of object-oriented programming or other non-SOA techniques are used because the principles of service orientation have not been understood.",
+      "context": "In a migration or transition context, there is often a clash between the principles or foundations of paradigms or architectural styles, e.g. object orientation and service orientation.",
+      "detection": "",
+      "consequences": "These practices may lead to poorly usable interfaces and may hinder maintainability.",
+      "cause": "Experienced object-oriented developers may fail to see new features in service orientation and therefore apply their standard practices in the new style. No trainings are provided to address this and prepare the developers for the new paradigm.",
+      "solution": "If RPC is used in the legacy system, a complete restructuring of the architecture should be considered. If a service supports or computerizes human activities, it often should not rely on RPC.",
+      "example": "SOAP is only used as an envelop for RPC calls, which limits service interfaces to RPC-like interactions.",
+      "sources": [
+        "@inproceedings{kral2009popular,author={Kr{\\'a}l, Jaroslav and {\\v{Z}}emlicka, Michal},booktitle={2009 Computation World: Future Computing, Service Computation, Cognitive, Adaptive, Content, Patterns},title={Popular SOA Antipatterns},year={2009},pages={271-276},doi={10.1109/ComputationWorld.2009.80},month={Nov}}",
+        "@book{rotem2012soa,title={SOA patterns}, author={Rotem-Gal-Oz, Arnon and Bruno, Eric and Dahan, Udi}, year={2012}, publisher={Manning}}"
+      ],
+      "tags": [
+        "soa",
+        "application",
+        "migration"
+      ],
+      "relatedItems": [
+        {
+          "relation": "follows",
+          "name": "Nanoservices"
+        },
+        {
+          "relation": "follows",
+          "name": "Big Bang"
+        },
+        {
+          "relation": "follows",
+          "name": "No Legacy"
+        },
+        {
+          "relation": "relates",
+          "name": "Golden Hammer"
+        }
+      ]
+    }
+  ]
+}

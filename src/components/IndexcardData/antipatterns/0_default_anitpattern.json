@@ -1,0 +1,29 @@
+{
+  "antiPatterns": [
+    {
+      "name": "",
+      "aliases": [
+        ""
+      ],
+      "description": "",
+      "context": "",
+      "detection": "",
+      "consequences": "",
+      "cause": "",
+      "solution": "",
+      "example": "",
+      "sources": [
+        ""
+      ],
+      "tags": [
+        ""
+      ],
+      "relatedItems": [
+        {
+          "relation": "",
+          "name": ""
+        }
+      ]
+    }
+  ]
+}

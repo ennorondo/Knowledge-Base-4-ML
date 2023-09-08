@@ -1,0 +1,40 @@
+{
+  "antiPatterns": [
+    {
+      "name": "Golden Hammer",
+      "aliases": [
+        "Silver Bullet",
+        "When in doubt, make it a service",
+        "Web Services Will Fix Our Problems"
+      ],
+      "description": "A system implements its functionality as services although there are no objective reasons for and benefits from this. Algorithmic functions can also be a type of this antipattern if they are frequently used and rely on large data exchanges.",
+      "context": "I have a hammer and everything else is a nail.",
+      "detection": "The system involves not only web services, but also other architectural paradigms and styles.",
+      "consequences": "Unnecessary distribution can lead to performance issues, because direct communication is more efficient. There are also higher efforts for development, testing, and debugging, because implementing functionality as services is complex.",
+      "cause": "Services may be chosen because of their promised scalability, modifiability, or interoperability, even though these quality attributes are not really vital for the system at hand. A general reason therefore is a poor understanding of the system's requirements. Lastly, using new and hyped technology or architectural styles is attractive and tempting for a lot of developers and architects.",
+      "solution": "Extensive refactoring of the underlying system and service to appropriate Java/J2EE component.",
+      "example": " Functionality is implemented as a web service, although it is only used internally by the system. The assumption is that this would be better for future requirements, but it reduces the performance.",
+      "sources": [
+        "@book{dudney2003j2ee, title={J2EE antipatterns}, author={Dudney, Bill and Asbury, Stephen and Krozak, Joseph K and Wittkopf, Kevin}, year={2003}, publisher={John Wiley \\& Sons}}",
+        "@online{Sourcemaking-Antipatterns, author = {Shvets, Alexander and Frey, Gerhard and Pavlova, Marina}, title = {AntiPatterns}, date = {2007/2019}, url = {https://sourcemaking.com/antipatterns}, urldate = {2019-04-24}}",
+        "@book{Brown, author = {Brown, William H. and Malveau, Raphael C. and McCormick, Hays W. \"Skip\" and Mowbray, Thomas J.}, title = {AntiPatterns: Refactoring Software, Architectures, and Projects in Crisis}, year = {1998}, isbn = {0471197130, 9780471197133}, edition = {1st}, publisher = {John Wiley & Sons, Inc.}, address = {New York, NY, USA}}"
+      ],
+      "tags": [
+        "microservices",
+        "soa",
+        "architecture",
+        "abstraction"
+      ],
+      "relatedItems": [
+        {
+          "relation": "relates",
+          "name": "Nothing New"
+        },
+        {
+          "relation": "relates",
+          "name": "The Shiny Nickel"
+        }
+      ]
+    }
+  ]
+}

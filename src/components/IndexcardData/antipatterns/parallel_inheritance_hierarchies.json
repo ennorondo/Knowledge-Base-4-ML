@@ -1,0 +1,37 @@
+{
+    "antiPatterns": [
+        {
+            "name": "Parallel Inheritance Hierarchies",
+            "aliases": [
+                ""
+            ],
+            "description": "This is  really a special case of Shotgun Surgery - every time you make a subclass of one class, you have to make a subclass of another",
+            "context": "Sometimes having parallel class hierarchies is just a way to avoid even bigger mess with program architecture. If you find that your attempts to de-duplicate hierarchies produce even uglier code, just step out, revert all of your changes and get used to that code.",
+            "detection": "",
+            "consequences": "",
+            "cause": "All was well as long as the hierarchy stayed small. But with new classes being added, making changes has become harder and harder.",
+            "solution": "You may de-duplicate parallel class hierarchies in two steps. First, make instances of one hierarchy refer to instances of another hierarchy. Then, remove the hierarchy in the referred class, by using Move Method and Move Field.",
+            "example": "",
+            "sources": [
+                "@book{Fowler, title={Refactoring: improving the design of existing code}, author={Fowler, Martin}, year={2018}, publisher={Addison-Wesley Professional}}",
+                "@book{Wake, author = {Wake, William C.}, title = {Refactoring Workbook}, year = {2003}, isbn = {0321109295}, edition = {1}, publisher = {Addison-Wesley Longman Publishing Co., Inc.}, address = {Boston, MA, USA}}",
+                "@article{Mantyla, author = {Mäntylä, Mika V. and Lassenius, Casper}, title = {Subjective Evaluation of Software Evolvability Using Code Smells: An Empirical Study}, journal = {Empirical Software Engineering}, issue_date = {September 2006}, volume = {11}, number = {3}, month = sep, year = {2006}, issn = {1382-3256}, pages = {395--431}, numpages = {37}, url = {http://dx.doi.org/10.1007/s10664-006-9002-8}, doi = {10.1007/s10664-006-9002-8}, acmid = {1146489}, publisher = {Kluwer Academic Publishers}, address = {Hingham, MA, USA}, keywords = {Code metrics, Code smells, Evolvability, Human factors, Maintainability, Perceived evaluation, Software metrics, Subjective evaluation}}",
+                "@online{RefactoringGuru-Refactoring, author = {Shvets, Alexander}, title = {Refactoring: clean your code}, date = {2014/2019}, url = {https://refactoring.guru/refactoring}, urldate = {2019-04-24}}",
+                "@online{Codinghorror, author = {Atwood, Jeff}, title = {Code Smells}, date = {2006-05-18}, url = {https://blog.codinghorror.com/code-smells/}, urldate = {2019-04-24}}",
+                "@book{Lippert, title={Refactoring in large software projects: performing complex restructurings successfully}, author={Lippert, Martin and Roock, Stephen}, year={2006}, publisher={John Wiley & Sons}}"
+            ],
+            "tags": [
+                "soa",
+                "application",
+                "The Change Preventers",
+                "between classes"
+            ],
+            "relatedItems": [
+                {
+                    "relation": "relates",
+                    "name": "Shotgun Surgery"
+                }
+            ]
+        }
+    ]
+}

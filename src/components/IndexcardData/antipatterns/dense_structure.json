@@ -1,0 +1,35 @@
+{
+    "antiPatterns": [
+        {
+            "name": "Dense Structure",
+            "aliases": [],
+            "description": "This smell arises when a code repository has excessive and dense dependencies without any particular structure.",
+            "context": "",
+            "detection": "We prepare a graph for each repository to detect the smell. Each module is treated as a node and any reference from the module to another module is treated as an edge. We then compute the average degree of the graph. A graph with more than 0.5 average degree suffers from this smell.",
+            "consequences": "",
+            "cause": "",
+            "solution": "",
+            "example": "",
+            "sources": [
+                "@INPROCEEDINGS{Sharma, author={T. {Sharma} and M. {Fragkoulis} and D. {Spinellis}}, booktitle={2016 IEEE/ACM 13th Working Conference on Mining Software Repositories (MSR)}, title={Does Your Configuration Code Smell?}, year={2016}, volume={}, number={}, pages={189-200}, keywords={software maintenance;software quality;configuration management system;smell category;puppet repositories;code quality management;software engineering knowledge;computing system configurations;IaC;infrastructure as code;configuration code;Best practices;Software;Software engineering;Correlation;Context;Production;Data mining;Infrastructure as Code;Code quality;Configuration smells;Technical debt;Maintainability}, doi={10.1109/MSR.2016.028}, ISSN={}, month={May}}"
+            ],
+            "tags": [
+                "soa",
+                "microservices",
+                "architecture",
+                "between classes",
+                "The Couplers"
+            ],
+            "relatedItems": [
+                {
+                    "relation": "relates",
+                    "name": "Hub-like Modularization"
+                },
+                {
+                    "relation": "relates",
+                    "name": "Weakened Modularity"
+                }
+            ]
+        }
+    ]
+}

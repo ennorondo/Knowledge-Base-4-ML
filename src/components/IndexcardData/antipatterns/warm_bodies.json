@@ -1,0 +1,35 @@
+{
+    "antiPatterns": [
+        {
+            "name": "Warm Bodies",
+            "aliases": [
+                "Deadwood",
+                "Body Shop",
+                "Seat Warmers",
+                "Mythical Man-Month"
+            ],
+            "description": "Project teams that grow beyond five people generally experience escalating difficulties with group coordination. The members have trouble making efficient decisions and maintaining a common vision. Working toward a near-term deadline is essential to encourage the team to focus and begin producing a solution.",
+            "context": "Skilled programmers are essential to the success of a software project. So-called heroic programmers are exceptionally productive, but as few as 1 in 20 have this talent. They produce an order of magnitude of more working software than an average programmer. Large-scale software projects are prevalent in many industries. These projects employ hundreds of programmers to build an enterprise system; a staff of 100 to 400 on a single project is not atypical.",
+            "detection": "",
+            "consequences": "",
+            "cause": "",
+            "solution": "The ideal project size is four programmers; the ideal project duration is four months Software projects are subject to the same group dynamics as committee meetings (Design by Committee).",
+            "example": "",
+            "sources": [
+                "@book{Brown, author = {Brown, William H. and Malveau, Raphael C. and McCormick, Hays W. \"Skip\" and Mowbray, Thomas J.}, title = {AntiPatterns: Refactoring Software, Architectures, and Projects in Crisis}, year = {1998}, isbn = {0471197130, 9780471197133}, edition = {1st}, publisher = {John Wiley & Sons, Inc.}, address = {New York, NY, USA}}",
+                "@online{Sourcemaking-Antipatterns, author = {Shvets, Alexander and Frey, Gerhard and Pavlova, Marina}, title = {AntiPatterns}, date = {2007/2019}, url = {https://sourcemaking.com/antipatterns}, urldate = {2019-04-24}}"
+            ],
+            "tags": [
+                "business",
+                "soa",
+                "microservices"
+            ],
+            "relatedItems": [
+                {
+                    "relation": "",
+                    "name": ""
+                }
+            ]
+        }
+    ]
+}

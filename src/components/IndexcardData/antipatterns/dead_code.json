@@ -1,0 +1,46 @@
+{
+    "antiPatterns": [
+        {
+            "name": "Dead Code",
+            "aliases": [
+                "Lava Flow",
+                "Unutilized Abstraction",
+                "Speculative Generality",
+                "Speculative Hierarchy",
+                "Dead Function",
+                "Commented-Out Code",
+                "Unused Classes",
+                "Boat Anchor"
+            ],
+            "description": "A variable, parameter, method or class is no longer used (usually because it’s obsolete). Or you have generic or abstract code that is not actually needed today. Such code often exists to support future behavior, which may or may not be necessary in the future.",
+            "context": "\"I don't know what that class is for; it was written before I got here.\" If you’re working on a framework, it’s eminently reasonable to create functionality not used in the framework itself, as long as the functionality is needed by the frameworks' users. Before deleting elements, make sure that they aren't used in unit tests. This happens if tests need a way to get certain internal information from a class or perform special testing-related actions.",
+            "detection": "",
+            "consequences": "Unused code which harms the readability and maintainability.",
+            "cause": "When requirements for the software have changed or corrections have been made, nobody had time to clean up the old code. Such code could also be found in complex conditionals, when one of the branches becomes unreachable (due to error or other circumstances). Sometimes code is created \"just in case\" to support anticipated future features that never get implemented. As a result, code becomes hard to understand and support.",
+            "solution": "Delete unused code and files. In the case of an unnecessary class, Inline Class or Collapse Hierarchy can be applied if a subclass or superclass is used. To remove unneeded parameters, use Remove Parameter.",
+            "example": "",
+            "sources": [
+                "@book{Fowler, title={Refactoring: improving the design of existing code}, author={Fowler, Martin}, year={2018}, publisher={Addison-Wesley Professional}}",
+                "@book{Wake, author = {Wake, William C.}, title = {Refactoring Workbook}, year = {2003}, isbn = {0321109295}, edition = {1}, publisher = {Addison-Wesley Longman Publishing Co., Inc.}, address = {Boston, MA, USA}}",
+                "@article{Mantyla, author = {Mäntylä, Mika V. and Lassenius, Casper}, title = {Subjective Evaluation of Software Evolvability Using Code Smells: An Empirical Study}, journal = {Empirical Software Engineering}, issue_date = {September 2006}, volume = {11}, number = {3}, month = sep, year = {2006}, issn = {1382-3256}, pages = {395--431}, numpages = {37}, url = {http://dx.doi.org/10.1007/s10664-006-9002-8}, doi = {10.1007/s10664-006-9002-8}, acmid = {1146489}, publisher = {Kluwer Academic Publishers}, address = {Hingham, MA, USA}, keywords = {Code metrics, Code smells, Evolvability, Human factors, Maintainability, Perceived evaluation, Software metrics, Subjective evaluation}}",
+                "@online{RefactoringGuru-Refactoring, author = {Shvets, Alexander}, title = {Refactoring: clean your code}, date = {2014/2019}, url = {https://refactoring.guru/refactoring}, urldate = {2019-04-24}}",
+                "@online{Codinghorror, author = {Atwood, Jeff}, title = {Code Smells}, date = {2006-05-18}, url = {https://blog.codinghorror.com/code-smells/}, urldate = {2019-04-24}}",
+                "@online{Sourcemaking-Antipatterns, author = {Shvets, Alexander and Frey, Gerhard and Pavlova, Marina}, title = {AntiPatterns}, date = {2007/2019}, url = {https://sourcemaking.com/antipatterns}, urldate = {2019-04-24}}",
+                "@book{Suryanarayana, author = {Suryanarayana, Girish and Samarthyam, Ganesh and Sharma, Tushar}, title = {Refactoring for Software Design Smells: Managing Technical Debt}, year = {2014}, isbn = {0128013974,\newline 9780128013977}, edition = {1st}, publisher = {Morgan Kaufmann Publishers Inc.}, address = {San Francisco, CA, USA}}",
+                "@book{Martin, author = {Martin, Robert C.}, title = {Clean Code: A Handbook of Agile Software Craftsmanship}, year = {2008}, isbn = {0132350882, 9780132350884}, edition = {1}, publisher = {Prentice Hall PTR}, address = {Upper Saddle River, NJ, USA}}",
+                "@book{Lippert, title={Refactoring in large software projects: performing complex restructurings successfully}, author={Lippert, Martin and Roock, Stephen}, year={2006}, publisher={John Wiley & Sons}}"
+            ],
+            "tags": [
+                "application",
+                "The Dispensables",
+                "within classes"
+            ],
+            "relatedItems": [
+                {
+                    "relation": "",
+                    "name": ""
+                }
+            ]
+        }
+    ]
+}

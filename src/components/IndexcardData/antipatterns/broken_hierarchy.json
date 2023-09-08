@@ -1,0 +1,34 @@
+{
+    "antiPatterns": [
+        {
+            "name": "Broken Hierarchy",
+            "aliases": [
+                "Subclasses Without Redefinitions",
+                "Multipath Hierarchy"
+            ],
+            "description": "This smell arises when a supertype and its subtype conceptually do not share an \"isA\" relationship resulting in broken substitutability.",
+            "context": "",
+            "detection": "inheritance from other module. Multiple paths of inheritance from one abstraction.",
+            "consequences": "bad understandability and reusability",
+            "cause": "Inheritance for implementation reuse or incorrect use of inheritance.",
+            "solution": "It appears that inheritance has been used in the design to leverage functionality offered by an abstraction, when using an association relationship between the participating types would have served the purpose. The recommended refactoring, therefore, is to apply \"replace inheritance with delegation\". In other words, the \"isA\" relationship should be replaced with a \"hasA\" relationship.",
+            "example": "",
+            "sources": [
+                "@book{Suryanarayana, author = {Suryanarayana, Girish and Samarthyam, Ganesh and Sharma, Tushar}, title = {Refactoring for Software Design Smells: Managing Technical Debt}, year = {2014}, isbn = {0128013974,\newline 9780128013977}, edition = {1st}, publisher = {Morgan Kaufmann Publishers Inc.}, address = {San Francisco, CA, USA}}",
+                "@INPROCEEDINGS{Sharma, author={T. {Sharma} and M. {Fragkoulis} and D. {Spinellis}}, booktitle={2016 IEEE/ACM 13th Working Conference on Mining Software Repositories (MSR)}, title={Does Your Configuration Code Smell?}, year={2016}, volume={}, number={}, pages={189-200}, keywords={software maintenance;software quality;configuration management system;smell category;puppet repositories;code quality management;software engineering knowledge;computing system configurations;IaC;infrastructure as code;configuration code;Best practices;Software;Software engineering;Correlation;Context;Production;Data mining;Infrastructure as Code;Code quality;Configuration smells;Technical debt;Maintainability}, doi={10.1109/MSR.2016.028}, ISSN={}, month={May}}",
+                "@book{Lippert, title={Refactoring in large software projects: performing complex restructurings successfully}, author={Lippert, Martin and Roock, Stephen}, year={2006}, publisher={John Wiley & Sons}}",
+                "@book{Riel, author = {Riel, Arthur J.}, title = {Object-Oriented Design Heuristics}, year = {1996}, isbn = {020163385X}, publisher = {Addison-Wesley Longman Publishing Co., Inc.}, address = {Boston, MA, USA}}"
+            ],
+            "tags": [
+                "architecture",
+                "between classes"
+            ],
+            "relatedItems": [
+                {
+                    "relation": "relates",
+                    "name": "Refused Bequest"
+                }
+            ]
+        }
+    ]
+}

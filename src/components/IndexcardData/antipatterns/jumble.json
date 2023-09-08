@@ -1,0 +1,34 @@
+{
+    "antiPatterns": [
+        {
+            "name": "Jumble",
+            "aliases": [
+                ""
+            ],
+            "description": "When horizontal and vertical design elements are intermixed, an unstable architecture results. Vertical design elements are dependent upon the individual application and specific software implementations. Horizontal design elements are those that are common across applications and specific implementations.",
+            "context": "It takes some time to fully understand the meaning and implications of horizontal and vertical design elements. In particular, the Horizontal-Vertical-Metadata (HVM) pattern establishes key principles for software architecture design. The Jumble AntiPattern describes the most common misuse of these principles.",
+            "detection": "",
+            "consequences": "",
+            "cause": "",
+            "solution": "The first step is to identify the horizontal design elements and delegate them to a separate architecture layer. Then use the horizontal elements to capture the common interoperability functionality in the architecture.",
+            "example": "",
+            "sources": [
+                "@online{Sourcemaking-Antipatterns, author = {Shvets, Alexander and Frey, Gerhard and Pavlova, Marina}, title = {AntiPatterns}, date = {2007/2019}, url = {https://sourcemaking.com/antipatterns}, urldate = {2019-04-24}}",
+                "@book{Martin, author = {Martin, Robert C.}, title = {Clean Code: A Handbook of Agile Software Craftsmanship}, year = {2008}, isbn = {0132350882, 9780132350884}, edition = {1}, publisher = {Prentice Hall PTR}, address = {Upper Saddle River, NJ, USA}}",
+                "@book{Lippert, title={Refactoring in large software projects: performing complex restructurings successfully}, author={Lippert, Martin and Roock, Stephen}, year={2006}, publisher={John Wiley & Sons}}"
+            ],
+            "tags": [
+                "soa",
+                "microservices",
+                "architecture",
+                "The Change Preventers"
+            ],
+            "relatedItems": [
+                {
+                    "relation": "",
+                    "name": ""
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "antiPatterns": [
+        {
+            "name": "Feature Envy",
+            "aliases": [
+                "Broken Modularization"
+            ],
+            "description": "Data and behavior that acts on that data belong together. When a method makes too many calls to other classes to obtain data or functionality, Feature Envy is in the air. It is often, but not always, accompanied by another code smell, Data Classes",
+            "context": "Sometimes behavior is purposefully kept separate from the class that holds the data. The usual advantage of this is the ability to dynamically change the behavior (see Strategy, Visitor and other patterns).",
+            "detection": "",
+            "consequences": "",
+            "cause": "This smell may occur after fields are moved to a data class. If this is the case, you may want to move the operations on data to this class as well.",
+            "solution": "As a basic rule, if things change at the same time, you should keep them in the same place. Usually data and functions that use this data are changed together (although exceptions are possible). Extract Method; Move Method",
+            "example": "",
+            "sources": [
+                "@book{Fowler, title={Refactoring: improving the design of existing code}, author={Fowler, Martin}, year={2018}, publisher={Addison-Wesley Professional}}",
+                "@book{Wake, author = {Wake, William C.}, title = {Refactoring Workbook}, year = {2003}, isbn = {0321109295}, edition = {1}, publisher = {Addison-Wesley Longman Publishing Co., Inc.}, address = {Boston, MA, USA}}",
+                "@article{Mantyla, author = {Mäntylä, Mika V. and Lassenius, Casper}, title = {Subjective Evaluation of Software Evolvability Using Code Smells: An Empirical Study}, journal = {Empirical Software Engineering}, issue_date = {September 2006}, volume = {11}, number = {3}, month = sep, year = {2006}, issn = {1382-3256}, pages = {395--431}, numpages = {37}, url = {http://dx.doi.org/10.1007/s10664-006-9002-8}, doi = {10.1007/s10664-006-9002-8}, acmid = {1146489}, publisher = {Kluwer Academic Publishers}, address = {Hingham, MA, USA}, keywords = {Code metrics, Code smells, Evolvability, Human factors, Maintainability, Perceived evaluation, Software metrics, Subjective evaluation}}",
+                "@online{RefactoringGuru-Refactoring, author = {Shvets, Alexander}, title = {Refactoring: clean your code}, date = {2014/2019}, url = {https://refactoring.guru/refactoring}, urldate = {2019-04-24}}",
+                "@online{Codinghorror, author = {Atwood, Jeff}, title = {Code Smells}, date = {2006-05-18}, url = {https://blog.codinghorror.com/code-smells/}, urldate = {2019-04-24}}",
+                "@book{Suryanarayana, author = {Suryanarayana, Girish and Samarthyam, Ganesh and Sharma, Tushar}, title = {Refactoring for Software Design Smells: Managing Technical Debt}, year = {2014}, isbn = {0128013974,\newline 9780128013977}, edition = {1st}, publisher = {Morgan Kaufmann Publishers Inc.}, address = {San Francisco, CA, USA}}",
+                "@book{Martin, author = {Martin, Robert C.}, title = {Clean Code: A Handbook of Agile Software Craftsmanship}, year = {2008}, isbn = {0132350882, 9780132350884}, edition = {1}, publisher = {Prentice Hall PTR}, address = {Upper Saddle River, NJ, USA}}",
+                "@book{Riel, author = {Riel, Arthur J.}, title = {Object-Oriented Design Heuristics}, year = {1996}, isbn = {020163385X}, publisher = {Addison-Wesley Longman Publishing Co., Inc.}, address = {Boston, MA, USA}}"
+            ],
+            "tags": [
+                "soa",
+                "architecture",
+                "The Couplers",
+                "between classes"
+            ],
+            "relatedItems": [
+                {
+                    "relation": "relates",
+                    "name": "Connector Envy"
+                },
+                {
+                    "relation": "relates",
+                    "name": "Data Class"
+                },
+                {
+                    "relation": "relates",
+                    "name": "Incomplete Abstraction"
+                },
+                {
+                    "relation": "follows",
+                    "name": "Chatty Service"
+                }
+            ]
+        }
+    ]
+}

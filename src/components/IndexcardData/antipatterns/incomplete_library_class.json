@@ -1,0 +1,35 @@
+{
+    "antiPatterns": [
+        {
+            "name": "Incomplete Library Class",
+            "aliases": [
+                ""
+            ],
+            "description": "Occurs when responsibilities emerge in our code that clearly should be moved to a library class, but we are unable or unwilling to modify the library class to accept these new responsibilities",
+            "context": "Extending a library can generate additional work if the changes to the library involve changes in code.",
+            "detection": "",
+            "consequences": "",
+            "cause": "The author of the library hasn't provided the features you need or has refused to implement them.",
+            "solution": "To introduce a few methods to a library class, use Introduce Foreign Method. For big changes in a class library, use Introduce Local Extension.",
+            "example": "",
+            "sources": [
+                "@book{Fowler, title={Refactoring: improving the design of existing code}, author={Fowler, Martin}, year={2018}, publisher={Addison-Wesley Professional}}",
+                "@book{Wake, author = {Wake, William C.}, title = {Refactoring Workbook}, year = {2003}, isbn = {0321109295}, edition = {1}, publisher = {Addison-Wesley Longman Publishing Co., Inc.}, address = {Boston, MA, USA}}",
+                "@online{RefactoringGuru-Refactoring, author = {Shvets, Alexander}, title = {Refactoring: clean your code}, date = {2014/2019}, url = {https://refactoring.guru/refactoring}, urldate = {2019-04-24}}",
+                "@online{Codinghorror, author = {Atwood, Jeff}, title = {Code Smells}, date = {2006-05-18}, url = {https://blog.codinghorror.com/code-smells/}, urldate = {2019-04-24}}"
+            ],
+            "tags": [
+                "soa",
+                "microservices",
+                "application",
+                "legacy"
+            ],
+            "relatedItems": [
+                {
+                    "relation": "relates",
+                    "name": "Incomplete Abstraction"
+                }
+            ]
+        }
+    ]
+}

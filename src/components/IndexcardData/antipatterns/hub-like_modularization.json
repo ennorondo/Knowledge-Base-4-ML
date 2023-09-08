@@ -1,0 +1,42 @@
+{
+  "antiPatterns": [
+    {
+      "name": "Hub-like Modularization",
+      "aliases": [
+        "Bottleneck Service"
+      ],
+      "description": "This smell arises when an abstraction has dependencies (both incoming and outgoing) with a large number of other abstractions, being a single point of failure.",
+      "context": "",
+      "detection": "",
+      "consequences": "The service may have increased response times and low availability. It also becomes a single point of failure in the architecture.",
+      "cause": "Functionality may gradually become more and more important and is therefore used by more and more consumers, maybe even external ones via a public service interface. To maximize reuse, service interfaces are sometimes also generalized which leads to more service consumers as well.",
+      "solution": "Split according to responsibilities.",
+      "example": "",
+      "sources": [
+        "@inproceedings{nayrolles2013improving, title={Improving SOA antipatterns detection in Service Based Systems by mining execution traces}, author={Nayrolles, Mathieu and Moha, Naouel and Valtchev, Petko}, booktitle={Reverse Engineering (WCRE), 2013 20th Working Conference on}, pages={321--330}, year={2013}, doi={10.1109/WCRE.2013.6671307}}",
+        "@inproceedings{palma2015study, title={A study on the taxonomy of service antipatterns}, author={Palma, Francis and Mohay, Naouel}, booktitle={Patterns Promotion and Anti-patterns Prevention (PPAP), 2015 IEEE 2nd Workshop on}, pages={5--8}, year={2015}, doi={10.1109/PPAP.2015.7076848}}",
+        "@book{Suryanarayana, author = {Suryanarayana, Girish and Samarthyam, Ganesh and Sharma, Tushar}, title = {Refactoring for Software Design Smells: Managing Technical Debt}, year = {2014}, isbn = {0128013974,\newline 9780128013977}, edition = {1st}, publisher = {Morgan Kaufmann Publishers Inc.}, address = {San Francisco, CA, USA}}"
+      ],
+      "tags": [
+        "microservices",
+        "soa",
+        "architecture",
+        "between classes"
+      ],
+      "relatedItems": [
+        {
+          "relation": "relates",
+          "name": "Middle Man"
+        },
+        {
+          "relation": "relates",
+          "name": "Dense Structure"
+        },
+        {
+          "relation": "relates",
+          "name": "Weakened Modularity"
+        }
+      ]
+    }
+  ]
+}

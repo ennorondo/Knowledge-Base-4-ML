@@ -1,0 +1,33 @@
+{
+    "antiPatterns": [
+        {
+            "name": "Conditional Complexity",
+            "aliases": [
+                "Encapsulate Conditionals"
+            ],
+            "description": "Conditional logic is innocent in its infancy, when it is simple to understand and contained within a few lines of code. Unfortunately, it rarely ages well. You implement several new features and suddenly your conditional logic becomes complicated and expansive.",
+            "context": "",
+            "detection": "",
+            "consequences": "",
+            "cause": "",
+            "solution": "Introduce Null Object; Replace Conditional Logic with Strategy; Replace State-Altering Conditionals with State; Decorator",
+            "example": "",
+            "sources": [
+                "@book{Kerievsky, author = {Kerievsky, Joshua}, title = {Refactoring to Patterns}, year = {2004}, isbn = {0321213351}, publisher = {Pearson Higher Education}}",
+                "@online{Codinghorror, author = {Atwood, Jeff}, title = {Code Smells}, date = {2006-05-18}, url = {https://blog.codinghorror.com/code-smells/}, urldate = {2019-04-24}}",
+                "@book{Martin, author = {Martin, Robert C.}, title = {Clean Code: A Handbook of Agile Software Craftsmanship}, year = {2008}, isbn = {0132350882, 9780132350884}, edition = {1}, publisher = {Prentice Hall PTR}, address = {Upper Saddle River, NJ, USA}}"
+            ],
+            "tags": [
+                "application",
+                "within classes",
+                "The Bloaters"
+            ],
+            "relatedItems": [
+                {
+                    "relation": "",
+                    "name": ""
+                }
+            ]
+        }
+    ]
+}

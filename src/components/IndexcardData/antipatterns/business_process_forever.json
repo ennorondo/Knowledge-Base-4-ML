@@ -1,0 +1,28 @@
+{
+  "antiPatterns": [
+    {
+      "name": "Business Process Forever",
+      "aliases": [
+        "No Businessmen Involvement"
+      ],
+      "description": "Business processes have been strictly defined and are now static and cannot be easily changed.",
+      "context": "Especially in small and medium sized businesses, business processes are often not stable. Moreover, not enough data of good quality may be available to allow a solid design.",
+      "detection": "",
+      "consequences": "Business process owners have little to no control over the outcome and quality of their processes, since they cannot change their structure. They are merely observers.",
+      "cause": "Business processes have been rigorously defined in the past and are now regarded as stable by technical experts. Therefore, business owners may not be able to easily commission for changes.",
+      "solution": "End-users have to be involved in the business processes and therefore, user-oriented interfaces have to be created. In Microservices, cross-functional teams ensure a holistic view on services and their functionality.",
+      "example": "",
+      "sources": [
+        "@inproceedings{kral2007most,author={Kral, Jaroslav and Zemlicka, Michal},booktitle={International Conference on Software Engineering Advances (ICSEA 2007)},title={The Most Important Service-Oriented Antipatterns},year={2007},pages={29--29},doi={10.1109/ICSEA.2007.74},month={Aug}}"
+      ],
+      "tags": [
+        "microservices",
+        "soa",
+        "business",
+        "legacy",
+        "The Change Preventers"
+      ],
+      "relatedItems": []
+    }
+  ]
+}

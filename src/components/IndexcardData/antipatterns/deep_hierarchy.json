@@ -1,0 +1,37 @@
+{
+    "antiPatterns": [
+        {
+            "name": "Deep Hierarchy",
+            "aliases": [
+                "Missing Levels of Abstraction",
+                "Coarse Hierarchy",
+                "Inheritance Hierarchy Too Deep",
+                "List-like Inheritance Hierarchy"
+            ],
+            "description": "This smell arises when an inheritance hierarchy is excessively deep.",
+            "context": "In other words, a hierarchy that is deep makes the design more complex which leads to poor understandability and a greater possibility of design or implementation errors. Hence, it is important to avoid hierarchies that are excessively deep. A popular value for the depth is 6.",
+            "detection": "",
+            "consequences": "",
+            "cause": "Focus on reuse and speculative generalization",
+            "solution": "Collapse Hierarchy",
+            "example": "",
+            "sources": [
+                "@book{Suryanarayana, author = {Suryanarayana, Girish and Samarthyam, Ganesh and Sharma, Tushar}, title = {Refactoring for Software Design Smells: Managing Technical Debt}, year = {2014}, isbn = {0128013974,\newline 9780128013977}, edition = {1st}, publisher = {Morgan Kaufmann Publishers Inc.}, address = {San Francisco, CA, USA}}",
+                "@book{Lippert, title={Refactoring in large software projects: performing complex restructurings successfully}, author={Lippert, Martin and Roock, Stephen}, year={2006}, publisher={John Wiley & Sons}}",
+                "@book{Riel, author = {Riel, Arthur J.}, title = {Object-Oriented Design Heuristics}, year = {1996}, isbn = {020163385X}, publisher = {Addison-Wesley Longman Publishing Co., Inc.}, address = {Boston, MA, USA}}"
+            ],
+            "tags": [
+                "architecture",
+                "soa",
+                "microservices",
+                "between classes"
+            ],
+            "relatedItems": [
+                {
+                    "relation": "relates",
+                    "name": "Wide Hierarchy"
+                }
+            ]
+        }
+    ]
+}

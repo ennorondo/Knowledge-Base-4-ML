@@ -1,0 +1,35 @@
+{
+    "antiPatterns": [
+        {
+            "name": "Combinatorial Explosion",
+            "aliases": [
+                "Missing Encapsulation"
+            ],
+            "description": "A subtle form of duplication, this smell exists when numerous pieces of code do the same thing using different combinations of data or behavior",
+            "context": "",
+            "detection": "",
+            "consequences": "",
+            "cause": "Lack of refactoring and awareness of changing concerns, making naive design decisions.",
+            "solution": "Perhaps use generics or an interpreter. Or factor out strategies.",
+            "example": "Encryption with different algorithms. Adding new algorithm can lead to a class explosion.",
+            "sources": [
+                "@book{Kerievsky, author = {Kerievsky, Joshua}, title = {Refactoring to Patterns}, year = {2004}, isbn = {0321213351}, publisher = {Pearson Higher Education}}",
+                "@book{Wake, author = {Wake, William C.}, title = {Refactoring Workbook}, year = {2003}, isbn = {0321109295}, edition = {1}, publisher = {Addison-Wesley Longman Publishing Co., Inc.}, address = {Boston, MA, USA}}",
+                "@online{Codinghorror, author = {Atwood, Jeff}, title = {Code Smells}, date = {2006-05-18}, url = {https://blog.codinghorror.com/code-smells/}, urldate = {2019-04-24}}",
+                "@book{Suryanarayana, author = {Suryanarayana, Girish and Samarthyam, Ganesh and Sharma, Tushar}, title = {Refactoring for Software Design Smells: Managing Technical Debt}, year = {2014}, isbn = {0128013974,\newline 9780128013977}, edition = {1st}, publisher = {Morgan Kaufmann Publishers Inc.}, address = {San Francisco, CA, USA}}"
+            ],
+            "tags": [
+                "application",
+                "The Dispensables",
+                "between classes",
+                "abstraction"
+            ],
+            "relatedItems": [
+                {
+                    "relation": "relates",
+                    "name": "Duplicated Code"
+                }
+            ]
+        }
+    ]
+}

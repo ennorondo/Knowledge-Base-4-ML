@@ -1,0 +1,32 @@
+{
+    "antiPatterns": [
+        {
+            "name": "Ambiguous Viewpoint",
+            "aliases": [
+                ""
+            ],
+            "description": "Object-oriented analysis and design (OOA&D) models are often presented without clarifying the viewpoint represented by the model. By default, OOA&D models denote an implementation viewpoint that is potentially the least useful. Mixed viewpoints don't allow the fundamental separation of interfaces from implementation details, which are one of the primary benefits of the object-oriented paradigm.",
+            "context": "Models can be less useful if they don't focus on the required perspective(s). A perspective applies filters to the information.",
+            "detection": "",
+            "consequences": "Different viewpoints emphasize different aspects, which can also cause disregard of some crucial factors of other viewpoints.",
+            "cause": "",
+            "solution": "There are three fundamental viewpoints for OOA&D models: the business viewpoint, the specification viewpoint, and the implementation viewpoint. The business viewpoint defines the user's model of the information and processes. This is a model that domain experts can defend and explain (commonly called an analysis model). Analysis models are some of the most stable models of the information system and are worthwhile to maintain.",
+            "example": "Defining a class model for a telephone exchange system will vary significantly depending upon the focus provided by the following perspectives: Telephone user, who cares about the ease of making calls and receiving itemized bills. Telephone operator, who cares about connecting users to required numbers. Telephone accounting department, which cares about the formulae for billing and records of all calls made by users.",
+            "sources": [
+                "@online{Sourcemaking-Antipatterns, author = {Shvets, Alexander and Frey, Gerhard and Pavlova, Marina}, title = {AntiPatterns}, date = {2007/2019}, url = {https://sourcemaking.com/antipatterns}, urldate = {2019-04-24}}"
+            ],
+            "tags": [
+                "architecture",
+                "ambiguity",
+                "soa",
+                "microservices"
+            ],
+            "relatedItems": [
+                {
+                    "relation": "",
+                    "name": ""
+                }
+            ]
+        }
+    ]
+}

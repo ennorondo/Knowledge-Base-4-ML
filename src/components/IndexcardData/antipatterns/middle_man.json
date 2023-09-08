@@ -1,0 +1,49 @@
+{
+    "antiPatterns": [
+        {
+            "name": "Middle Man",
+            "aliases": [
+                ""
+            ],
+            "description": "Delegation is good, and one of the key fundamental features of objects. But too much of a good thing can lead to objects that add no value, simply passing messages on to another object. This smell can be the result of overzealous elimination of Message Chains.",
+            "context": "Don't delete middle man that have been created for a reason: A middle man may have been added to avoid interclass dependencies. Some design patterns create middle man on purpose (such as Proxy or Decorator).",
+            "detection": "",
+            "consequences": "",
+            "cause": "This smell can be the result of overzealous elimination of Message Chains. In other cases, it can be the result of the useful work of a class being gradually moved to other classes. The class remains as an empty shell that doesn’t do anything other than delegate.",
+            "solution": "If most of a method's classes delegate to another class, Remove Middle Man is in order. Replace Delegation with Inheritance",
+            "example": "",
+            "sources": [
+                "@book{Fowler, title={Refactoring: improving the design of existing code}, author={Fowler, Martin}, year={2018}, publisher={Addison-Wesley Professional}}",
+                "@book{Wake, author = {Wake, William C.}, title = {Refactoring Workbook}, year = {2003}, isbn = {0321109295}, edition = {1}, publisher = {Addison-Wesley Longman Publishing Co., Inc.}, address = {Boston, MA, USA}}",
+                "@article{Mantyla, author = {Mäntylä, Mika V. and Lassenius, Casper}, title = {Subjective Evaluation of Software Evolvability Using Code Smells: An Empirical Study}, journal = {Empirical Software Engineering}, issue_date = {September 2006}, volume = {11}, number = {3}, month = sep, year = {2006}, issn = {1382-3256}, pages = {395--431}, numpages = {37}, url = {http://dx.doi.org/10.1007/s10664-006-9002-8}, doi = {10.1007/s10664-006-9002-8}, acmid = {1146489}, publisher = {Kluwer Academic Publishers}, address = {Hingham, MA, USA}, keywords = {Code metrics, Code smells, Evolvability, Human factors, Maintainability, Perceived evaluation, Software metrics, Subjective evaluation}}",
+                "@online{RefactoringGuru-Refactoring, author = {Shvets, Alexander}, title = {Refactoring: clean your code}, date = {2014/2019}, url = {https://refactoring.guru/refactoring}, urldate = {2019-04-24}}",
+                "@online{Codinghorror, author = {Atwood, Jeff}, title = {Code Smells}, date = {2006-05-18}, url = {https://blog.codinghorror.com/code-smells/}, urldate = {2019-04-24}}"
+            ],
+            "tags": [
+                "soa",
+                "microservices",
+                "architecture",
+                "The Couplers",
+                "between classes"
+            ],
+            "relatedItems": [
+                {
+                    "relation": "relates",
+                    "name": "Connector Envy"
+                },
+                {
+                    "relation": "relates",
+                    "name": "Message Chain"
+                },
+                {
+                    "relation": "relates",
+                    "name": "Hub-like Modularization"
+                },
+                {
+                    "relation": "relates",
+                    "name": "Lazy Class"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+  "antiPatterns": [
+    {
+      "name": "Data-Driven Migration",
+      "aliases": [
+        ""
+      ],
+      "description": "You migrate from a monolithic application to a microservices architecture and try to migrate both service functionality and the corresponding data together.",
+      "context": "Because it is difficult to get the granularity of each service right the first time, you may be frequently merging or splitting your services. Ideally, you want to migrate the data for each service only once, because data migrations are complex and error-prone much more than source code migrations.",
+      "detection": "",
+      "consequences": "Additional efforts for data migration, because you will need several iterations to get it right.",
+      "cause": "Trying to split the data for each service right the first time.",
+      "solution": "First, migrate the functionality of each service and worry about bounded contexts between services and data later. Once you learn more about the services, you will likely adjust the level of granularity through merging and splitting. After reaching a stable level of service granularity, migrate the data.",
+      "example": "",
+      "sources": [
+        "@book{richards2016microservices, author = {Richards, Mark}, isbn = {9781491963319}, pages = {66}, title = {{Microservices AntiPatterns and Pitfalls}}, year = {2016}}"
+      ],
+      "tags": [
+        "microservices",
+        "business",
+        "migration",
+        "data_management"
+      ],
+      "relatedItems": []
+    }
+  ]
+}

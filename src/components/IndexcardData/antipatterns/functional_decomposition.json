@@ -1,0 +1,38 @@
+{
+    "antiPatterns": [
+        {
+            "name": "Functional Decomposition",
+            "aliases": [
+                "Imperative Abstraction",
+                "No Object-Orientation",
+                "Operation Class",
+                "Tree-like Dependency Graph"
+            ],
+            "description": " Developers tend to make every subroutine a class, ignoring class hierarchy altogether (and pretty much ignoring object orientation entirely).",
+            "context": "The Functional Decomposition AntiPattern is fine when an object-oriented solution is not required. This exception can be extended to deal with solutions that are purely functional in nature but wrapped to provide an object-oriented interface to the implementation code.",
+            "detection": "Classes with \"function\" names such as Calculate_Interest or Display_Table may indicate the existence of this AntiPattern. All class attributes are private and used only inside the class. Classes with a single action such as a function. An incredibly degenerate architecture that completely misses the point of object-oriented architecture. There is no clear way of documenting how the system works. Total exec declarations",
+            "consequences": "",
+            "cause": "Lack of object-oriented understanding. Lack of architecture enforcement. Sometimes, those who generate specifications and requirements don't necessarily have real experience with object-oriented systems.",
+            "solution": "If the class has a single method, try to better model it as part of an existing class. Frequently, classes designed as helper classes to another class are better off being combined into the base class they assist. Attempt to combine several classes into a new class that satisfies a design objective. The goal is to consolidate the functionality of several types into a single class that captures a broader domain concept than the previous finer-grained classes. If the class does not contain state information of any kind, consider rewriting it as a function.",
+            "example": "",
+            "sources": [
+                "@online{Sourcemaking-Antipatterns, author = {Shvets, Alexander and Frey, Gerhard and Pavlova, Marina}, title = {AntiPatterns}, date = {2007/2019}, url = {https://sourcemaking.com/antipatterns}, urldate = {2019-04-24}}",
+                "@book{Suryanarayana, author = {Suryanarayana, Girish and Samarthyam, Ganesh and Sharma, Tushar}, title = {Refactoring for Software Design Smells: Managing Technical Debt}, year = {2014}, isbn = {0128013974,\newline 9780128013977}, edition = {1st}, publisher = {Morgan Kaufmann Publishers Inc.}, address = {San Francisco, CA, USA}}",
+                "@INPROCEEDINGS{Sharma, author={T. {Sharma} and M. {Fragkoulis} and D. {Spinellis}}, booktitle={2016 IEEE/ACM 13th Working Conference on Mining Software Repositories (MSR)}, title={Does Your Configuration Code Smell?}, year={2016}, volume={}, number={}, pages={189-200}, keywords={software maintenance;software quality;configuration management system;smell category;puppet repositories;code quality management;software engineering knowledge;computing system configurations;IaC;infrastructure as code;configuration code;Best practices;Software;Software engineering;Correlation;Context;Production;Data mining;Infrastructure as Code;Code quality;Configuration smells;Technical debt;Maintainability}, doi={10.1109/MSR.2016.028}, ISSN={}, month={May}}",
+                "@book{Lippert, title={Refactoring in large software projects: performing complex restructurings successfully}, author={Lippert, Martin and Roock, Stephen}, year={2006}, publisher={John Wiley & Sons}}"
+            ],
+            "tags": [
+                "soa",
+                "architecture",
+                "abstraction",
+                "between classes"
+            ],
+            "relatedItems": [
+                {
+                    "relation": "",
+                    "name": ""
+                }
+            ]
+        }
+    ]
+}

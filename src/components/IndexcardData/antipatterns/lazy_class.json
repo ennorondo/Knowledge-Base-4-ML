@@ -1,0 +1,50 @@
+{
+    "antiPatterns": [
+        {
+            "name": "Lazy Class",
+            "aliases": [
+                "Poltergeist",
+                "Freeloader",
+                "Unnecessary Abstraction",
+                "Gypsy",
+                "Proliferation of Classes",
+                "Big DoIt Controller Class"
+            ],
+            "description": "A class that is not doing enough to pay for itself should be eliminated. Those classes have limited responsibilities and brief life cycles. That way, they clutter software design, creating unnecessary abstractions.",
+            "context": "Sometimes a Lazy Class is created in order to delineate intentions for future development, In this case, try to maintain a balance between clarity and simplicity in your code.",
+            "detection": "Size of the abstraction body. Redundant navigation paths. Transient associations. Stateless classes. Temporary, short-duration objects and classes. Single-operation classes that exist only to \"seed\" or \"invoke\" other classes through temporary associations. Classes with \"control-like\" operation names such as start_process_alpha.",
+            "consequences": "",
+            "cause": "Perhaps a class was designed to be fully functional but after some of the refactoring it has become ridiculously small. Procedural thinking in object-oriented languages. If object orientation isn't the right tool, there's no right way to implement it.",
+            "solution": "Collapse Hierarchy or Inline Class: After their removal, however, the functionality that was \"provided\" must be replaced. This is easy with a simple adjustment to correct the architecture.",
+            "example": "Consider the case of an e-commerce application that has two classes: namely, Best-SellerBook and Book. Whenever the client wants to create a best-seller book, it creates an instance of a BestSellerBook. Internally, BestSellerBook delegates all the method calls to the Book class and does nothing else. Clearly, the BestSeller-Book abstraction is unnecessary since its behavior is exactly the same as the Book abstraction.",
+            "sources": [
+                "@book{Fowler, title={Refactoring: improving the design of existing code}, author={Fowler, Martin}, year={2018}, publisher={Addison-Wesley Professional}}",
+                "@book{Kerievsky, author = {Kerievsky, Joshua}, title = {Refactoring to Patterns}, year = {2004}, isbn = {0321213351}, publisher = {Pearson Higher Education}}",
+                "@book{Wake, author = {Wake, William C.}, title = {Refactoring Workbook}, year = {2003}, isbn = {0321109295}, edition = {1}, publisher = {Addison-Wesley Longman Publishing Co., Inc.}, address = {Boston, MA, USA}}",
+                "@article{Mantyla, author = {Mäntylä, Mika V. and Lassenius, Casper}, title = {Subjective Evaluation of Software Evolvability Using Code Smells: An Empirical Study}, journal = {Empirical Software Engineering}, issue_date = {September 2006}, volume = {11}, number = {3}, month = sep, year = {2006}, issn = {1382-3256}, pages = {395--431}, numpages = {37}, url = {http://dx.doi.org/10.1007/s10664-006-9002-8}, doi = {10.1007/s10664-006-9002-8}, acmid = {1146489}, publisher = {Kluwer Academic Publishers}, address = {Hingham, MA, USA}, keywords = {Code metrics, Code smells, Evolvability, Human factors, Maintainability, Perceived evaluation, Software metrics, Subjective evaluation}}",
+                "@online{RefactoringGuru-Refactoring, author = {Shvets, Alexander}, title = {Refactoring: clean your code}, date = {2014/2019}, url = {https://refactoring.guru/refactoring}, urldate = {2019-04-24}}",
+                "@online{Codinghorror, author = {Atwood, Jeff}, title = {Code Smells}, date = {2006-05-18}, url = {https://blog.codinghorror.com/code-smells/}, urldate = {2019-04-24}}",
+                "@book{Suryanarayana, author = {Suryanarayana, Girish and Samarthyam, Ganesh and Sharma, Tushar}, title = {Refactoring for Software Design Smells: Managing Technical Debt}, year = {2014}, isbn = {0128013974,\newline 9780128013977}, edition = {1st}, publisher = {Morgan Kaufmann Publishers Inc.}, address = {San Francisco, CA, USA}}",
+                "@INPROCEEDINGS{Sharma, author={T. {Sharma} and M. {Fragkoulis} and D. {Spinellis}}, booktitle={2016 IEEE/ACM 13th Working Conference on Mining Software Repositories (MSR)}, title={Does Your Configuration Code Smell?}, year={2016}, volume={}, number={}, pages={189-200}, keywords={software maintenance;software quality;configuration management system;smell category;puppet repositories;code quality management;software engineering knowledge;computing system configurations;IaC;infrastructure as code;configuration code;Best practices;Software;Software engineering;Correlation;Context;Production;Data mining;Infrastructure as Code;Code quality;Configuration smells;Technical debt;Maintainability}, doi={10.1109/MSR.2016.028}, ISSN={}, month={May}}",
+                "@online{Sourcemaking-Antipatterns, author = {Shvets, Alexander and Frey, Gerhard and Pavlova, Marina}, title = {AntiPatterns}, date = {2007/2019}, url = {https://sourcemaking.com/antipatterns}, urldate = {2019-04-24}}",
+                "@book{Brown, author = {Brown, William H. and Malveau, Raphael C. and McCormick, Hays W. \"Skip\" and Mowbray, Thomas J.}, title = {AntiPatterns: Refactoring Software, Architectures, and Projects in Crisis}, year = {1998}, isbn = {0471197130, 9780471197133}, edition = {1st}, publisher = {John Wiley & Sons, Inc.}, address = {New York, NY, USA}}"
+            ],
+            "tags": [
+                "soa",
+                "microservices",
+                "application",
+                "The Dispensables"
+            ],
+            "relatedItems": [
+                {
+                    "relation": "relates",
+                    "name": "Middle Man"
+                },
+                {
+                    "relation": "relates",
+                    "name": "Nanoservice"
+                }
+            ]
+        }
+    ]
+}

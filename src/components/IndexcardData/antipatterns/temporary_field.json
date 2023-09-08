@@ -1,0 +1,37 @@
+{
+    "antiPatterns": [
+        {
+            "name": "Temporary Field",
+            "aliases": [
+                ""
+            ],
+            "description": "Objects sometimes contain fields that do not seem to be needed at all the time. The rest of the time, the field is empty or contains irrelevant data, which is difficult to understand. This is often an alternative to Long Parameter List.",
+            "context": "",
+            "detection": "",
+            "consequences": "",
+            "cause": "Oftentimes, temporary fields are created for use in an algorithm that requires a large amount of inputs. So instead of creating a large number of parameters in the method, the programmer decides to create fields for this data in the class. These fields are used only in the algorithm and go unused the rest of the time. This kind of code is tough to understand. You expect to see data in object fields but for some reason they're almost always empty.",
+            "solution": "Temporary fields and all code operating on them can be put in a separate class via Extract Class. In other words, you're creating a method object, achieving the same result as if you would perform Replace Method with Method Object. Introduce Null Object and integrate it in place of the conditional code which was used to check the temporary field values for existence.",
+            "example": "",
+            "sources": [
+                "@book{Fowler, title={Refactoring: improving the design of existing code}, author={Fowler, Martin}, year={2018}, publisher={Addison-Wesley Professional}}",
+                "@book{Wake, author = {Wake, William C.}, title = {Refactoring Workbook}, year = {2003}, isbn = {0321109295}, edition = {1}, publisher = {Addison-Wesley Longman Publishing Co., Inc.}, address = {Boston, MA, USA}}",
+                "@article{Mantyla, author = {Mäntylä, Mika V. and Lassenius, Casper}, title = {Subjective Evaluation of Software Evolvability Using Code Smells: An Empirical Study}, journal = {Empirical Software Engineering}, issue_date = {September 2006}, volume = {11}, number = {3}, month = sep, year = {2006}, issn = {1382-3256}, pages = {395--431}, numpages = {37}, url = {http://dx.doi.org/10.1007/s10664-006-9002-8}, doi = {10.1007/s10664-006-9002-8}, acmid = {1146489}, publisher = {Kluwer Academic Publishers}, address = {Hingham, MA, USA}, keywords = {Code metrics, Code smells, Evolvability, Human factors, Maintainability, Perceived evaluation, Software metrics, Subjective evaluation}}",
+                "@online{RefactoringGuru-Refactoring, author = {Shvets, Alexander}, title = {Refactoring: clean your code}, date = {2014/2019}, url = {https://refactoring.guru/refactoring}, urldate = {2019-04-24}}",
+                "@online{Codinghorror, author = {Atwood, Jeff}, title = {Code Smells}, date = {2006-05-18}, url = {https://blog.codinghorror.com/code-smells/}, urldate = {2019-04-24}}"
+            ],
+            "tags": [
+                "soa",
+                "microservices",
+                "application",
+                "The Object-Orientation Abusers",
+                "within classes"
+            ],
+            "relatedItems": [
+                {
+                    "relation": "relates",
+                    "name": "Long Parameter List"
+                }
+            ]
+        }
+    ]
+}

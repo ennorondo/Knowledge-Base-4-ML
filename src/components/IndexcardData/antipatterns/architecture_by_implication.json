@@ -1,0 +1,32 @@
+{
+    "antiPatterns": [
+        {
+            "name": "Architecture by Implication",
+            "aliases": [
+                ""
+            ],
+            "description": "This AntiPattern is characterized by the lack of architecture specifications for a system under development. Usually, the architects responsible for the project have experience with previous system construction, and therefore assume that documentation is unnecessary.",
+            "context": "Lack of architecture planning and specification; insufficient definition of architecture for software, hardware, communications, persistence, security, and systems management. Hidden risks caused by scale, domain knowledge, technology, and complexity, all of which emerge as the project progresses. The Architecture by Implication AntiPattern is acceptable for a repeated solution, where there are minor differences in the code, such as installation scripts.",
+            "detection": "",
+            "consequences": "",
+            "cause": "No risk management. Overconfidence of managers, architects, and/or developers. Reliance on previous experience, which may differ in critical areas. Implicit and unresolved architecture issues caused by gaps in systems engineering.",
+            "solution": "The solution entails an organized approach to systems architecture definition, and relies on multiple views of the system. Each view models the system from the perspective of a system stakeholder, who may be real or imaginary, individual or aggregate. Each stakeholder is responsible for a high-priority set of questions and issues, and each view represents the entire information system and answers these key questions and issues. Define the architecture goals with blueprints and validate the implementation.",
+            "example": "",
+            "sources": [
+                "@online{Sourcemaking-Antipatterns, author = {Shvets, Alexander and Frey, Gerhard and Pavlova, Marina}, title = {AntiPatterns}, date = {2007/2019}, url = {https://sourcemaking.com/antipatterns}, urldate = {2019-04-24}}"
+            ],
+            "tags": [
+                "architecture",
+                "soa",
+                "microservices",
+                "abstraction"
+            ],
+            "relatedItems": [
+                {
+                    "relation": "relates",
+                    "name": "Stovepipe System"
+                }
+            ]
+        }
+    ]
+}

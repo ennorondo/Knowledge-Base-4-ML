@@ -1,0 +1,32 @@
+{
+    "antiPatterns": [
+        {
+            "name": "Wide Hierarchy",
+            "aliases": [
+                "Missing Levels of Abstraction",
+                "Coarse Hierarchy"
+            ],
+            "description": "This smell arises when an inheritance hierarchy is too wide indicating that intermediate types may be missing.",
+            "context": "A wide inheritance hierarchy can indicate the violation of the enabling technique \"apply meaningful generalization.\" When generalization is inadequately applied and consequently intermediate types are missing, it can result in problems of duplication and affects the changeability.",
+            "detection": "",
+            "consequences": "",
+            "cause": "Ignoring generalizations and refactoring",
+            "solution": "Extract Superclass and introduce intermediate abstractions.",
+            "example": "Fan-In / Fan-Out",
+            "sources": [
+                "@book{Suryanarayana, author = {Suryanarayana, Girish and Samarthyam, Ganesh and Sharma, Tushar}, title = {Refactoring for Software Design Smells: Managing Technical Debt}, year = {2014}, isbn = {0128013974,\newline 9780128013977}, edition = {1st}, publisher = {Morgan Kaufmann Publishers Inc.}, address = {San Francisco, CA, USA}}"
+            ],
+            "tags": [
+                "architecture",
+                "abstraction",
+                "between classes"
+            ],
+            "relatedItems": [
+                {
+                    "relation": "relates",
+                    "name": "Deep Hierarchy"
+                }
+            ]
+        }
+    ]
+}
