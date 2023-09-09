@@ -21,14 +21,17 @@ export default function AntipatternsPage() {
         <IndexCard
           name={bigbang.antiPatterns[0].name}
           description={bigbang.antiPatterns[0].description}
+          context={bigbang.antiPatterns[0].context}
         />
         <IndexCard
           name={ambiguousinterface.antiPatterns[0].name}
           description={ambiguousinterface.antiPatterns[0].description}
+          context={ambiguousinterface.antiPatterns[0].context}
         />
         <IndexCard
           name={ambiguousviewpoint.antiPatterns[0].name}
           description={ambiguousviewpoint.antiPatterns[0].description}
+          context={ambiguousviewpoint.antiPatterns[0].context}
         />
       </div>
     </div>

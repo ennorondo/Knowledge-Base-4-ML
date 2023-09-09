@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
+import Modal from './Modal';
+import './Modal.css';
 
 //CSS
 import './Indexcard.css'
 
-const IndexCard = ({ name, description, onClick }) => {
-  const [showDetails, setShowDetails] = useState(false);
+const IndexCard = ({ name, description, context }) => {
+  const [showModal, setShowModal] = useState(false);
 
-  const toggleDetails = () => {
-    setShowDetails(!showDetails);
+  const toggleModal = () => {
+    setShowModal(!showModal);
   };
 
   return (
@@ -17,17 +19,13 @@ const IndexCard = ({ name, description, onClick }) => {
           <h2>{name}</h2>
           <p>{description}</p>
         </div>
-        <div className='btn-container'>
-          <button onClick={toggleDetails} className='show-details-btn'>Show Details</button>
-          {showDetails && (
-            <div className="details">
-              <p>test</p>
-            </div>
+        <div className="btn-container">
+          <button onClick={toggleModal} className="show-details-btn">Show Details</button>
+          {showModal && (
+            <Modal onClose={toggleModal} name={name} description={description} context={context} />
           )}
         </div>
-
       </div>
-
     </div>
   );
 };

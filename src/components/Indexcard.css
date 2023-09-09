@@ -25,12 +25,3 @@
   align-items: center;
   justify-content: center;
 }
-
-/*for the details  */
-
-.details {
-  background-color: blueviolet;
-  position: absolute;
-  height: 800px;
-  width: 80%;
-}
