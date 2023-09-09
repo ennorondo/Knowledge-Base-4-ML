@@ -1,14 +1,36 @@
 import React from 'react';
+import IndexCard from '../Indexcard';
+
+//import json files for IndexCards
+import bigbang from '../IndexcardData/antipatterns/big_bang.json'
+import ambiguousinterface from '../IndexcardData/antipatterns/ambiguous_interface.json'
+import ambiguousviewpoint from '../IndexcardData/antipatterns/ambiguous_viewpoint.json'
 
 //CSS
 import '../Navbar.css'
+import './Antipatterns.css'
 
 import Navbar from '../Navbar';
 
 export default function AntipatternsPage() {
+
   return (
     <div>
-      <Navbar name="Antipatterns"/>
+      <Navbar name="Antipatterns" />
+      <div className="indexcard-container">
+        <IndexCard
+          name={bigbang.antiPatterns[0].name}
+          description={bigbang.antiPatterns[0].description}
+        />
+        <IndexCard
+          name={ambiguousinterface.antiPatterns[0].name}
+          description={ambiguousinterface.antiPatterns[0].description}
+        />
+        <IndexCard
+          name={ambiguousviewpoint.antiPatterns[0].name}
+          description={ambiguousviewpoint.antiPatterns[0].description}
+        />
+      </div>
     </div>
   );
 }

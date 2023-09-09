@@ -262,7 +262,7 @@ export default function AllProcessViews() {
         name2="Deployment"
         targetId2="scrollTarget-D"
         
-        name3="Finished"
+        name3="Finished!"
         targetId3="scrollTarget-BU"
 
         text="After data preparation, model building and model
