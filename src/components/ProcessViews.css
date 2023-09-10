@@ -6,15 +6,6 @@
   align-items: center;
 }
 
-.process-view-container {
-  height: 900px;
-  width: 100%;
-  padding-top: 100px;
-  z-index: 1;
-  margin-bottom: 300px;
-  
-}
-
 .process-text {
   margin-top: 50px;
   margin-left: 150px;
@@ -47,4 +38,53 @@
   align-items: center;
   justify-content: space-between;
   margin-top: 50px;
+}
+
+.bu-container{
+  height: 1200px;
+  width: 100%;
+  padding-top: 100px;
+  z-index: 1;
+  margin-bottom: 300px;
+
+}
+
+.du-container {
+  height: 920px;
+  width: 100%;
+  padding-top: 100px;
+  z-index: 1;
+  margin-bottom: 300px;
+}
+
+.dp-container {
+  height: 950px;
+  width: 100%;
+  padding-top: 100px;
+  z-index: 1;
+  margin-bottom: 300px;
+}
+
+.modeling-container{
+  height: 870px;
+  width: 100%;
+  padding-top: 100px;
+  z-index: 1;
+  margin-bottom: 300px;
+}
+
+.evaluation-container{
+  height: 820px;
+  width: 100%;
+  padding-top: 100px;
+  z-index: 1;
+  margin-bottom: 300px;
+}
+
+.deployment-container{
+  height: 830px;
+  width: 100%;
+  padding-top: 100px;
+  z-index: 1;
+  margin-bottom: 300px;
 }

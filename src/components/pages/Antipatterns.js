@@ -19,11 +19,6 @@ export default function AntipatternsPage() {
       <Navbar name="Antipatterns" />
       <div className="indexcard-container">
         <IndexCard
-          name={bigbang.antiPatterns[0].name}
-          description={bigbang.antiPatterns[0].description}
-          context={bigbang.antiPatterns[0].context}
-        />
-        <IndexCard
           name={ambiguousinterface.antiPatterns[0].name}
           description={ambiguousinterface.antiPatterns[0].description}
           context={ambiguousinterface.antiPatterns[0].context}
@@ -32,6 +27,11 @@ export default function AntipatternsPage() {
           name={ambiguousviewpoint.antiPatterns[0].name}
           description={ambiguousviewpoint.antiPatterns[0].description}
           context={ambiguousviewpoint.antiPatterns[0].context}
+        />
+        <IndexCard
+          name={bigbang.antiPatterns[0].name}
+          description={bigbang.antiPatterns[0].description}
+          context={bigbang.antiPatterns[0].context}
         />
       </div>
     </div>

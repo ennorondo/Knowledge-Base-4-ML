@@ -1,7 +1,8 @@
 .index-card {
   width: 25%;
   height: 460px;
-  background-color: brown;
+  background: linear-gradient(to right, #403f49, #000000);
+  border-radius: 15px;
 }
 
 .show-details-btn {

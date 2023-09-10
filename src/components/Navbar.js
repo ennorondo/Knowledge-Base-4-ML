@@ -10,10 +10,8 @@ export default function Navbar(props) {
         <h1 >{props.name}</h1>
       </div>
       <div className="menu-profile">
-        <input className="search-bar" type="search" id="search" name="q" placeholder="Search..." />
-        <ScrollToTopButton />
         <MenuButton />
-        <button href="https://www.youtube.com/" className="navbar-buttons">Profile</button>
+        <ScrollToTopButton />
       </div>
     </div>
   )
