@@ -242,7 +242,7 @@ export default function AllProcessViews() {
         "
 
       />
-      <div className='table-container'>
+      <div className='last-table-container'>
         <Table data={deploymentData} />
       </div>
     </div>

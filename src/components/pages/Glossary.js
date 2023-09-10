@@ -3,6 +3,7 @@ import Table from '../features/Table';
 import tableData from '../data/TableData';
 
 //CSS
+import './Glossary.css'
 import '../Navbar.css'
 import '../features/Table.css'
 
