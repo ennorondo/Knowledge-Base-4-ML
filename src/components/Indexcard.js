@@ -13,9 +13,8 @@ const IndexCard = ({ name, description, context, detection, consequences, cause,
   };
 
   return (
-    <div className="index-card">
-      <div className='content'>
-        <div className='info'>
+      <div className="index-card">
+        <div className="info">
           <h2>{name}</h2>
           <p>{description}</p>
         </div>
@@ -37,7 +36,6 @@ const IndexCard = ({ name, description, context, detection, consequences, cause,
           )}
         </div>
       </div>
-    </div>
   );
 };
 

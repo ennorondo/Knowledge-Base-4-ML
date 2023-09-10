@@ -1,28 +1,41 @@
 .index-card {
-  width: 25%;
-  height: 460px;
+  padding: 20px;
+  width: 250px;
+  min-height: 400px;
+  margin-bottom: 20px;
   background: linear-gradient(to right, #403f49, #000000);
   border-radius: 15px;
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .show-details-btn {
-  position: relative;
-  bottom: 20px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #007bff; /* Match your design */
+  color: #fff; /* Match your design */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .content {
   margin: 30px;
-  position: relative;
+  flex-grow: 1;
+  overflow: auto;
 }
 
-.info{
-  height: 390px;
+.info {
+  max-height: calc(100% - 70px);
 }
 
 .btn-container {
   height: 50px;
-  bottom: 0;
   display: flex;
   align-items: center;
   justify-content: center;
