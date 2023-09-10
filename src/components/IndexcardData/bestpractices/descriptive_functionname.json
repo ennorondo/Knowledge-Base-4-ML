@@ -1,0 +1,61 @@
+{
+  "bestPractices": [
+    {
+      "name": "Descriptive Function Names",
+      "description": "Functions should have descriptive names that reflect their purpose and behavior.",
+      "context": "Common practice in clean code development.",
+      "benefits": "Improved code readability and maintainability.",
+      "example": "A function named 'calculateTotalPrice' that calculates the total price of items in a shopping cart.",
+      "tags": [
+        "coding",
+        "naming",
+        "readability"
+      ],
+      "relatedItems": [
+        {
+          "relation": "relates",
+          "name": "Meaningful Variable Names"
+        },
+        {
+          "relation": "relates",
+          "name": "Code Comments"
+        }
+      ]
+    },
+    {
+      "name": "Modular Code Structure",
+      "description": "Code should be organized into modules or classes with well-defined responsibilities.",
+      "context": "Common practice in software engineering.",
+      "benefits": "Enhanced code maintainability, reusability, and testability.",
+      "example": "A web application structured into separate modules for user authentication, database access, and user interface components.",
+      "tags": [
+        "architecture",
+        "modularity",
+        "design"
+      ],
+      "relatedItems": [
+        {
+          "relation": "relates",
+          "name": "Single Responsibility Principle"
+        },
+        {
+          "relation": "relates",
+          "name": "Separation of Concerns"
+        }
+      ]
+    },
+    {
+      "name": "Version Control",
+      "description": "Use a version control system (e.g., Git) to track changes in your codebase.",
+      "context": "Standard practice in software development.",
+      "benefits": "Facilitates collaboration, code history tracking, and code backup.",
+      "example": "A software project managed using Git for version control.",
+      "tags": [
+        "source control",
+        "collaboration",
+        "workflow"
+      ],
+      "relatedItems": []
+    }
+  ]
+}

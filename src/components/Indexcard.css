@@ -13,11 +13,11 @@
 
 .show-details-btn {
   position: absolute;
-  bottom: 10px;
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #007bff; /* Match your design */
-  color: #fff; /* Match your design */
+  background: linear-gradient(to right, #007bff, #2c2549);
+  color: #fff; 
   padding: 10px 20px;
   border: none;
   border-radius: 5px;

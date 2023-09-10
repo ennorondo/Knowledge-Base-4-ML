@@ -1,9 +1,12 @@
-.indexcards-container{
+.indexcard-container {
+  margin-top: 100px;
+  margin-left: 5%;
   width: 90%;
-  height: 10000px;
-  
-}
-
-body {
-  height: 12000px;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  min-height: 400px;
+  flex-direction: row;
 }
